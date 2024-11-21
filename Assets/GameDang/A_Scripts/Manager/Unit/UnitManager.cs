@@ -6,7 +6,7 @@ public class UnitManager : MonoBehaviour
     [SerializeField] private Tower enemyTower;
     private void Awake()
     {
-        Debug.Log(playerTower);
+        
     }
 
     private void Update()
@@ -14,6 +14,8 @@ public class UnitManager : MonoBehaviour
         ButtonControl();
     }
 
+        
+    // 디버깅용 의미 없는 함수 GUI 대신에 키패드를 누르개 만들었을 뿐임
     private void ButtonControl()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -26,7 +28,9 @@ public class UnitManager : MonoBehaviour
             SpawnByIndex(3);
     }
 
-    private void SpawnByIndex(int index)
+    // 이 함수 호출하면 Unit 이 소환됨 index 는 현재 0 ~ 3 구간임 벗어나면 오류
+    // 이 함수를 GUI랑 잘연결하면됨.
+    public void SpawnByIndex(int index)
     {
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
         playerTower.SpawnUnit(unitInfo.prefab);
