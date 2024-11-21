@@ -23,4 +23,6 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner
         _activeUnits.Add(unit);
         return unit;
     }
+
+    public UnitInformation GetUnitInformation(int index) => towerData.list[index];
 }
