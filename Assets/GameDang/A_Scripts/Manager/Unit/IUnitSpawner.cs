@@ -14,4 +14,5 @@ public interface IUnitSpawner
     /// <param name="prefab">Spawn 시킬 Unit </param>
     /// <returns> Spawn 된 Unit </returns>
     public Unit SpawnUnit(GameObject prefab);
+    public Unit SpawnUnit(GameObject prefab, bool isPlayer);
 }

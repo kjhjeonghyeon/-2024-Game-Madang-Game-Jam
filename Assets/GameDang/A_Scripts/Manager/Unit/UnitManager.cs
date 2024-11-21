@@ -4,6 +4,10 @@ public class UnitManager : MonoBehaviour
 {
     [SerializeField] private Tower playerTower;
     [SerializeField] private Tower enemyTower;
+    private void Awake()
+    {
+        Debug.Log(playerTower);
+    }
 
     private void Update()
     {
@@ -13,19 +17,19 @@ public class UnitManager : MonoBehaviour
     private void ButtonControl()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            SpawnByButton(0);
+            SpawnByIndex(0);
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            SpawnByButton(1);
+            SpawnByIndex(1);
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            SpawnByButton(2);
+            SpawnByIndex(2);
         if (Input.GetKeyDown(KeyCode.Alpha4))
-            SpawnByButton(3);
+            SpawnByIndex(3);
     }
 
-    private void SpawnByButton(int index)
+    private void SpawnByIndex(int index)
     {
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
-        playerTower.SpawnUnit(unitInfo.prefab);        
+        playerTower.SpawnUnit(unitInfo.prefab);
     }
 
     #region 소환 TEST 코드

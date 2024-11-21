@@ -11,18 +11,19 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner
 
     /*- Unit 관련 -*/
     [SerializeField] protected TowerData towerData;
-    public Unit SpawnUnit(GameObject prefab)
+    public Unit SpawnUnit(GameObject prefab) => SpawnUnit(prefab, true);
+    public Unit SpawnUnit(GameObject prefab, bool isPlayer)
     {
         GameObject created = Instantiate(prefab, transform);
         Unit unit = created.GetComponent<Unit>();
         if (!unit) {
             throw new System.Exception("Unit Component가 없습니다.");
         }
-        unit.Init(this);
+        unit.Init(this, isPlayer);
         unit.transform.position = spawnLocation.position;
         _activeUnits.Add(unit);
         return unit;
-    }
+    }    
 
     public UnitInformation GetUnitInformation(int index) => towerData.list[index];
 }
