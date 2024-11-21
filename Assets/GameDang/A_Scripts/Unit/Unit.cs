@@ -15,4 +15,8 @@ public abstract class Unit : MonoBehaviour
         Country = country;
         OnSpawned?.Invoke(this);
     }
+    private void Update()
+    {
+        
+    }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerTower : Tower
+public class TowerB : Tower
 {
         
 }

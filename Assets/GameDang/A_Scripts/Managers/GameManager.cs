@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// 게임 시작 시간 (인 게임 진입 시점 부터 계산)
+    /// </summary>
+    public static float PlayTime = 0f;
+    private void Update()
+    {
+        PlayTime += Time.deltaTime;
+    }
     private void OnEnable()
     {
         Unit.OnSpawned += OnUnitSpawned;
