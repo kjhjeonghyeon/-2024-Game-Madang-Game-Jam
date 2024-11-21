@@ -15,6 +15,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner
         if (!unit) {
             throw new System.Exception("Unit Component가 없습니다.");
         }
+        unit.Init();
         unit.transform.position = spawnLocation.position;
         _activeUnits.Add(unit);
         return unit;

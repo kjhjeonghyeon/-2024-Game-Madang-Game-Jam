@@ -1,16 +1,12 @@
+using System;
 using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static event Action<Unit> OnSpawned;
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        OnSpawned?.Invoke(this);
     }
 }
