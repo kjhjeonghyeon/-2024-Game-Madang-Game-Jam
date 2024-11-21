@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c490f061d38fe14a9d63b2e358220db, type: 3}
+  m_Name: TowerData_B
+  m_EditorClassIdentifier: 
+  towerName: "Debug_A \uC138\uACC4\uAD00"
+  list:
+  - prefab: {fileID: 293771844951036286, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+    cost: 0
+    spawnDealy: 0
+  - prefab: {fileID: 293771844951036286, guid: 5ba16e7721770ea4480059d229f04be7, type: 3}
+    cost: 0
+    spawnDealy: 0
+  - prefab: {fileID: 293771844951036286, guid: 0f441a0669af54244a6572317eae4143, type: 3}
+    cost: 0
+    spawnDealy: 0
+  - prefab: {fileID: 293771844951036286, guid: 91e8ed6c7b02eb34e98fed912493d42d, type: 3}
+    cost: 0
+    spawnDealy: 0

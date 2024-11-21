@@ -346,7 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug_unitPrefab: {fileID: 293771844951036286, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
   playerTower: {fileID: 4737607628170542821}
-  enemyTower: {fileID: 1880606158}
+  enemyTower: {fileID: 1880606162}
 --- !u!1001 &1880606157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -399,12 +399,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTower
       objectReference: {fileID: 0}
+    - target: {fileID: 8531001728018855361, guid: 02eb342b4f2784c44838402f14c11e80, type: 3}
+      propertyPath: towerData
+      value: 
+      objectReference: {fileID: 11400000, guid: ca7baefab7256e84bbb0d32511e92c60, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02eb342b4f2784c44838402f14c11e80, type: 3}
---- !u!114 &1880606158 stripped
+--- !u!114 &1880606162 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8531001728018855361, guid: 02eb342b4f2784c44838402f14c11e80, type: 3}
   m_PrefabInstance: {fileID: 1880606157}
@@ -423,6 +427,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3651679827993300633, guid: 2e4e0c599a1fdca4e91f6aa9e7a81036, type: 3}
+      propertyPath: towerData
+      value: 
+      objectReference: {fileID: 11400000, guid: d2659a2131e9dde4b980162338f9b8e4, type: 2}
     - target: {fileID: 4861247491782424130, guid: 2e4e0c599a1fdca4e91f6aa9e7a81036, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7

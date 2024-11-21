@@ -4,10 +4,13 @@ using UnityEngine;
 [System.Serializable]
 public abstract class Tower : MonoBehaviour, IUnitSpawner
 {
-    // 외부 공개용
+    /*- Spawn 관련 -*/
     public List<Unit> ActiveUnits => _activeUnits;
     protected List<Unit> _activeUnits = new List<Unit>();
     [SerializeField] protected Transform spawnLocation;
+
+    /*- Unit 관련 -*/
+    [SerializeField] protected TowerData towerData;
     public Unit SpawnUnit(GameObject prefab)
     {
         GameObject created = Instantiate(prefab, transform);
