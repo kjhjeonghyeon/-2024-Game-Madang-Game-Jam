@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public abstract class Tower : MonoBehaviour, IUnitSpawner
 {
     // 외부 공개용
@@ -15,6 +16,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner
             throw new System.Exception("Unit Component가 없습니다.");
         }
         unit.transform.position = spawnLocation.position;
+        _activeUnits.Add(unit);
         return unit;
     }
 }
