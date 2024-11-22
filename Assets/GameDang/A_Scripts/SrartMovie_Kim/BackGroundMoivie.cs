@@ -12,7 +12,7 @@ public class BackGroundMoivie : MonoBehaviour
     public Image image_offB;
     public Image image_offC;
     public Image image_offD;
-    public Image nowOff;
+    Image nowOff;
 
     public Image imageA;
     public Image imageB;
@@ -28,8 +28,8 @@ public class BackGroundMoivie : MonoBehaviour
     float nowTime = 0;
     float time = 0;
     float speed = 15;
-    int iT1=0;
-    int iT2=0;
+    bool bSelect = false;
+    int iT1 = 0;
     void Start()
     {
 
@@ -43,64 +43,112 @@ public class BackGroundMoivie : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        time += speed * Time.deltaTime;
-       iT1 = (int)time;
-       iT2 = (int)nowTime;
+
+        //영상제생속도
         nowTime += speed * Time.deltaTime;
-        
-        if (iT1==0)
+        iT1 = (int)nowTime;
+        //영상시작\
+        if (nowTime < 100&&bSelect==true)
         {
-            speed = 15;
-            nowMovie = imageA;
-            nowOff = image_offA;
-            nowstripe=spritesA;
-            image_offD.gameObject.SetActive(true);
-            nowOff.gameObject.SetActive(false);
-
-            nowTime = 0;
-        }
-        if (iT1 == 60)
-        {
-            speed = 30;
-            nowMovie = imageB;
-            nowOff = image_offB;
-            nowstripe=spritesB;
-            image_offA.gameObject.SetActive(true);
-            nowOff.gameObject.SetActive(false);
-
-            nowTime = 0;
-        }
-        if (iT1==130)
-        {
-            speed = 50;
-            nowMovie = imageC;
-            nowOff = image_offC;
-            nowstripe = spritesC;
-            image_offB.gameObject.SetActive(true);
-            nowOff.gameObject.SetActive(false);
-
-            nowTime = 0;
-        }
-        if (iT1== 240)
-        {
-            speed = 30;
-            nowMovie = imageD;
-            nowOff = image_offD;
-            nowstripe=spritesD;
-            image_offC.gameObject.SetActive(true);
-            nowOff.gameObject.SetActive(false);
-            nowTime = 0;
+            nowMovie.sprite = nowstripe[iT1];
 
         }
-        else if (iT1 >320)
+        else if (nowTime > 100)
         {
-            time = 0;
-            image_offD.gameObject.SetActive(true);
-            nowOff.gameObject.SetActive(false);
+            iT1 = 0;
             nowTime = 0;
         }
-        nowMovie.sprite = nowstripe[iT2];
+
     }
 
-  
+
+    public void buttonA()
+    {
+        imageA.sprite = spritesA[0];
+        imageB.sprite = spritesB[0];
+        imageC.sprite = spritesC[120];
+        imageD.sprite = spritesD[58];
+        iT1 = 0;
+        nowTime = 0;
+        speed = 15;
+        nowMovie = imageA;
+
+        nowstripe = spritesA;
+        image_offA.gameObject.SetActive(false);
+        image_offD.gameObject.SetActive(true);
+        image_offC.gameObject.SetActive(true);
+        image_offB.gameObject.SetActive(true);
+
+        bSelect = true;
+
+
+    }
+    public void buttonB()
+    {
+
+        imageA.sprite = spritesA[0];
+        imageB.sprite = spritesB[0];
+        imageC.sprite = spritesC[120];
+        imageD.sprite = spritesD[58];
+        iT1 = 0;
+        nowTime = 0;
+        speed = 30;
+        nowMovie = imageB;
+
+        nowstripe = spritesB;
+        image_offA.gameObject.SetActive(true);
+        image_offB.gameObject.SetActive(false);
+        image_offC.gameObject.SetActive(true);
+        image_offD.gameObject.SetActive(true);
+
+        bSelect = true;
+
+
+
+    }
+    public void buttonC()
+    {
+
+        imageA.sprite = spritesA[0];
+        imageB.sprite = spritesB[0];
+        imageC.sprite = spritesC[120];
+        imageD.sprite = spritesD[58];
+        iT1 = 0;
+        nowTime = 0;
+        speed = 40;
+        nowMovie = imageC;
+
+        nowstripe = spritesC;
+        image_offA.gameObject.SetActive(true);
+        image_offB.gameObject.SetActive(true);
+        image_offC.gameObject.SetActive(false);
+        image_offD.gameObject.SetActive(true);
+
+        bSelect = true;
+
+ 
+
+
+    }
+    public void buttonD()
+    {
+        imageA.sprite = spritesA[0];
+        imageB.sprite = spritesB[0];
+        imageC.sprite = spritesC[120];
+        imageD.sprite = spritesD[58];
+        iT1 = 0;
+        nowTime = 0;
+        speed = 50;
+        nowMovie = imageD;
+
+        nowstripe = spritesD;
+        image_offA.gameObject.SetActive(true);
+        image_offB.gameObject.SetActive(true);
+        image_offC.gameObject.SetActive(true);
+        image_offD.gameObject.SetActive(false);
+
+        bSelect = true;
+        
+
+    }
 }
