@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AttackSystem : MonoBehaviour
+public class DetectSystem : MonoBehaviour
 {
     private Unit _unit;
     private Rigidbody2D _rigid;

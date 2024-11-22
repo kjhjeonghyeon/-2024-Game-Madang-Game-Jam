@@ -28,18 +28,18 @@ public abstract class Unit : MonoBehaviour, IHit
     /// 이동 방향 1 이면 오른쪽 -1 이면 왼쪽
     /// </summary>
     private int direction = 1;
-    [SerializeField] private AttackSystem attackSystem;
+    [SerializeField] private DetectSystem detectSystem;
 
     public void Init(Tower onwer)
     {
         Owner = onwer;
         direction = TowerManager.PlayerTower == onwer ? 1 : -1;
         OnSpawned?.Invoke(this);
-        attackSystem.SetUnit(this);
+        detectSystem.SetUnit(this);
     }
     private void Update()
     {
-        isTarget = attackSystem.targets.Count > 0;
+        isTarget = detectSystem.targets.Count > 0;
     }
     private void FixedUpdate()
     {
