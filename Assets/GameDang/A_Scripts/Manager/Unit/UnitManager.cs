@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class UnitManager : MonoBehaviour
 {
-    [SerializeField] private Tower playerTower;
-    [SerializeField] private Tower enemyTower;
-    private void Awake()
-    {
-        
-    }
-
     private void Update()
     {
         ButtonControl();
@@ -32,6 +25,7 @@ public class UnitManager : MonoBehaviour
     // 이 함수를 GUI랑 잘연결하면됨.
     public void SpawnByIndex(int index)
     {
+        Tower playerTower = TowerManager.PlayerTower;
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
         playerTower.SpawnUnit(unitInfo.prefab);
     }
@@ -42,13 +36,13 @@ public class UnitManager : MonoBehaviour
     [ContextMenu("Player Tower Unit Spawn")]
     public void Debug_SpawnUnit()
     {
-        playerTower.SpawnUnit(debug_unitPrefab);
+        TowerManager.PlayerTower.SpawnUnit(debug_unitPrefab);
     }
 
     [ContextMenu("Enemy Unit Spawn")]
     public void Debug_SpawnEnemy()
     {
-        enemyTower.SpawnUnit(debug_unitPrefab);
+        TowerManager.EnemyTower.SpawnUnit(debug_unitPrefab);
     }
     #endregion
 }

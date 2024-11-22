@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.48989856, g: 0.82920426, b: 0.9528302, a: 1}
+  m_Color: {r: 1, g: 0.6855081, b: 0.2783019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 4861247491782424130}
   - component: {fileID: -3651679827993300633}
   m_Layer: 0
-  m_Name: Tower_B
+  m_Name: Tower_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 3638603394627223544}
-  towerData: {fileID: 11400000, guid: d2659a2131e9dde4b980162338f9b8e4, type: 2}
+  towerData: {fileID: 11400000, guid: d925e0500e0fe8940ae69f6eadf251a6, type: 2}
