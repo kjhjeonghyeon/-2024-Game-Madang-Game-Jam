@@ -4,21 +4,20 @@ using UnityEngine;
 public abstract class Unit : MonoBehaviour
 {
     public static event Action<Unit> OnSpawned;
-
     /// <summary>
-    /// 스폰 시킨 타워
+    /// 소유 타워
     /// </summary>
-    public Tower Country { get; private set; }
+    public Tower Owner { get; private set; }
 
     /// <summary>
     /// Player 가 스폰 시킨 Unit 인지.
     /// </summary>
     private bool _isPlayer;
 
-    public void Init(Tower country, bool isPlayer)
+    public void Init(Tower onwer)
     {
-        Country = country;
-        _isPlayer = isPlayer;
+        Owner = onwer;
+        _isPlayer = TowerManager.PlayerTower == onwer;
         OnSpawned?.Invoke(this);
     }
     private void FixedUpdate()
