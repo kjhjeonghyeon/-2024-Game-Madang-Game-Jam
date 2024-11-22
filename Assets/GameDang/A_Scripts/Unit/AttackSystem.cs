@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class AttackSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Unit _unit;
+    public void SetUnit(Unit unit)
+    {
+        _unit = unit;
+
+        Debug.Log("공격 시스템 뿌슝빠슝");
+    }
+
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        
+        Debug.Log("Trigger");
     }
 }
