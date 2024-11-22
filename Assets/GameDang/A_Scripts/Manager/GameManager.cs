@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
         TowerManager.PlayerSelectTowerIndex = index;
 
         // 이후 Scene 변경?
+        //
         SceneManager.LoadScene("Game_ptk_2");
     }
 }
