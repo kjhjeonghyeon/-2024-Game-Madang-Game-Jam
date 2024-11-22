@@ -3,6 +3,12 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
+    [SerializeField] protected float range;
+    public float Range
+    {
+        get { return range; }
+        set { range = value; }
+    }
     /// <summary>
     /// 소유 타워
     /// </summary>

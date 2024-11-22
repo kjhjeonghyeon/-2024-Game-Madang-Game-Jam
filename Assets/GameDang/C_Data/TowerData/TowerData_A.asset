@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerName: "\uC800\uADF8"
   list:
-  - prefab: {fileID: 3279687023784596815, guid: db92992fa1b3b86479d8e5084512b4ff, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 3279687023784596815, guid: 99f9702422475224282b79ba34d8b006, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 3279687023784596815, guid: 170a55e4cdbedad40ad05fe551def4e9, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 3279687023784596815, guid: 2d7b4f93feb749143bffa3d588fbe7b3, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0

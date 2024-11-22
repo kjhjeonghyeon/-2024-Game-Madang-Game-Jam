@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerName: "Debug_A \uC138\uACC4\uAD00"
   list:
-  - prefab: {fileID: 293771844951036286, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 293771844951036286, guid: 5ba16e7721770ea4480059d229f04be7, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 293771844951036286, guid: 0f441a0669af54244a6572317eae4143, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 293771844951036286, guid: 91e8ed6c7b02eb34e98fed912493d42d, type: 3}
+  - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
     spawnDealy: 0

@@ -3,20 +3,24 @@ using UnityEngine;
 public class AttackSystem : MonoBehaviour
 {
     private Unit _unit;
+    private Rigidbody2D _rigid;
+    private BoxCollider2D _collider;
+    private void Awake()
+    {
+        _rigid = GetComponent<Rigidbody2D>();
+        _collider = GetComponent<BoxCollider2D>();
+    }
     public void SetUnit(Unit unit)
     {
         _unit = unit;
-
-        Debug.Log("공격 시스템 뿌슝빠슝");
-    }
-
-    private void Update()
-    {
-        
+        _collider.size = new Vector2(unit.Range, 1);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Trigger");
+        if (collider.tag == "Unit")
+        {
+            Debug.Log("Detecting "+ collider.name +"");
+        }
     }
 }
