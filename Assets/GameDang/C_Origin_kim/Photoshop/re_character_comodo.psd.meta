@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      re_character_comodo_0: -5813413501806152491
+      re_character_comodo_1: 1174286578205990667
+      re_character_comodo_2: -4143149188088693060
+      re_character_comodo_3: -4208354538283625244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
