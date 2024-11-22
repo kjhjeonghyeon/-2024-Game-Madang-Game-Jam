@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c490f061d38fe14a9d63b2e358220db, type: 3}
   m_Name: TowerData_A
   m_EditorClassIdentifier: 
-  towerName: "Debug_B \uC138\uACC4\uAD00"
+  towerName: "\uC800\uADF8"
   list:
   - prefab: {fileID: 3279687023784596815, guid: db92992fa1b3b86479d8e5084512b4ff, type: 3}
     cost: 0
