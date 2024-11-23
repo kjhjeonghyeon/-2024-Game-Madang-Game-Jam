@@ -13,7 +13,7 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private List<GameObject> towerPrefabs;
     [SerializeField] private Transform playerTowerPosition;
     [SerializeField] private Transform enemyTowerPosition;
-    private HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
+    private static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
     public static Tower PlayerTower { get; private set; }
     public static Tower EnemyTower { get; private set; }
 
