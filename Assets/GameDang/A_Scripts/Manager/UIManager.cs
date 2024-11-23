@@ -41,6 +41,6 @@ public class UIManager : MonoBehaviour
 
     private void OnGoldChange(int gold)
     {
-        Debug.Log("골드 변경 됨 현재 골드 : " + gold);
+        // Debug.Log("골드 변경 됨 현재 골드 : " + gold);
     }
 }

@@ -12,6 +12,10 @@ public abstract class Player : MonoBehaviour
     protected virtual void Update()
     {
         UpdateGold();
+        if (Input.GetKeyDown(KeyCode.G)) 
+        {
+            Debug.Log(Util.Dice(50));
+        }
     }
     private void UpdateGold()
     {
