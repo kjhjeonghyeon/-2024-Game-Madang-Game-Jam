@@ -1,9 +1,21 @@
+using System.Collections;
 using UnityEngine;
 
 public class TowerD : Tower
 {
+    public static float SpeedUpValue = 1f;
+    [SerializeField] private float Time;
+    [Tooltip("배속 임.. 2배속 이런식으로")]
+    [SerializeField] private float Value;
     public override void Skill()
+    {   
+        StartCoroutine(Run());
+    }
+    private IEnumerator Run()
     {
-        Debug.Log("타워 D의 스킬");
+        SpeedUpValue = Value;
+        yield return new WaitForSeconds(Time);
+        SpeedUpValue = 1f;
     }
 }
+

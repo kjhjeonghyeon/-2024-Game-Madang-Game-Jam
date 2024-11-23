@@ -241,3 +241,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 3638603394627223544}
   towerData: {fileID: 11400000, guid: 51b11f3e50d22ca4992a08e7c3e540da, type: 2}
+  Time: 5
+  Value: 1.5

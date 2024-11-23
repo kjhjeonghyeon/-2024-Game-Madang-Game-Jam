@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerManager : MonoBehaviour
 {
-    private static int playerSelectTowerIndex = 1;
+    private static int playerSelectTowerIndex = 3;
     public static int PlayerSelectTowerIndex
     {
         get { return playerSelectTowerIndex; }
