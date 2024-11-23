@@ -137,6 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   range: 2
+  attackDelay: 1
+  health: 10
+  attackPower: 3
   detectSystem: {fileID: 5359926553153395547}
 --- !u!50 &8125651493876484042
 Rigidbody2D:

@@ -1,10 +1,16 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public abstract class Unit : MonoBehaviour, IHit
 {
+    #region Unit 정보 propertys
     [SerializeField] protected float speed;
     [SerializeField] protected float range;
+    [SerializeField] protected float attackDelay;
+    [SerializeField] protected int health;
+    [SerializeField] protected int attackPower;
     public float Range
     {
         get { return range; }
@@ -15,7 +21,30 @@ public abstract class Unit : MonoBehaviour, IHit
         get { return speed; }
         set { speed = value; }
     }
+    public float AttackDelay
+    {
+        get { return attackDelay; }
+        set { attackDelay = value; }
+    }
+    public int Health
+    {
+        get { return health; }
+        set { health = value; }
+    }
+    public int AttackPower
+    {
+        get { return attackPower; }
+        set { attackPower = value; }
+    }
+    #endregion
+    
+    #region  제어용 Property
     private bool isTarget = false;
+    private IHit attackTarget = null;
+    private float delay = 0;
+    private bool isAttack = false;
+
+    #endregion
     /// <summary>
     /// 소유 타워
     /// </summary>
@@ -40,6 +69,9 @@ public abstract class Unit : MonoBehaviour, IHit
     private void Update()
     {
         isTarget = detectSystem.targets.Count > 0;
+        if (isTarget) TargetTing();
+        isAttack = attackTarget != null;
+        if (isAttack) Attacking();
     }
     private void FixedUpdate()
     {
@@ -48,9 +80,29 @@ public abstract class Unit : MonoBehaviour, IHit
         }
     }
 
+    private void TargetTing()
+    {
+        attackTarget = detectSystem.targets.ToList()[0];
+    }
+
+    private void Attacking()
+    {
+        if (delay <= 0) {
+            Attack();
+            delay = attackDelay;
+        }
+        delay -= Time.deltaTime;
+    }
+
+    protected virtual void Attack()
+    {
+        int calculatePower = attackPower; // 추가 데미지 필요할경우 해당 변수 조정
+        attackTarget.Hit(calculatePower);
+    }
+
     public void Hit(int damage)
     {
-        throw new NotImplementedException();
+        Debug.Log(gameObject.name + " : " + damage + " 피해 !");
     }
 
 

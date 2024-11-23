@@ -29,7 +29,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
 
     public void Hit(int damage)
     {
-        throw new System.NotImplementedException();
+        Debug.Log(gameObject.name + " : " + damage + " 피해 !");
     }
 
     public Tower GetTower()
