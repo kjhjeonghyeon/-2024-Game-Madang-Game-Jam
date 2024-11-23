@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7520783, b: 0.5235849, a: 1}
+  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -127,9 +127,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4861247491782424130}
-  - component: {fileID: 8531001728018855361}
-  - component: {fileID: -1382187087933455762}
-  - component: {fileID: -842607798925847606}
+  - component: {fileID: -3651679827993300633}
+  - component: {fileID: -6617979135924290548}
+  - component: {fileID: -5883575041778840652}
   m_Layer: 0
   m_Name: Tower_A
   m_TagString: Tower
@@ -154,7 +154,7 @@ Transform:
   - {fileID: 3638603394627223544}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8531001728018855361
+--- !u!114 &-3651679827993300633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,12 +163,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5186224927360599001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238c97e3fe29fe84eb89054f6013b34e, type: 3}
+  m_Script: {fileID: 11500000, guid: 84053f83004765b4fa8d16e22b5bdbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 3638603394627223544}
-  towerData: {fileID: 11400000, guid: ca7baefab7256e84bbb0d32511e92c60, type: 2}
---- !u!50 &-1382187087933455762
+  towerData: {fileID: 11400000, guid: d2659a2131e9dde4b980162338f9b8e4, type: 2}
+  interest: 1
+  interestValue: 50
+--- !u!50 &-6617979135924290548
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -195,7 +197,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &-842607798925847606
+--- !u!61 &-5883575041778840652
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
