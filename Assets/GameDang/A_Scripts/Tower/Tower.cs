@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,11 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
 
     /*- Unit 관련 -*/
     [SerializeField] protected TowerData towerData;
+    public int Helath { get; private set; }
+    private void Awake()
+    {
+        Helath = towerData.health;
+    }
     public Unit SpawnUnit(GameObject prefab)
     {
         GameObject created = Instantiate(prefab);
@@ -30,10 +36,22 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     public void Hit(int damage)
     {
         Debug.Log(gameObject.name + " : " + damage + " 피해 !");
+        Helath -= damage;
+        if (Helath <= 0) {
+            Died();
+        }
+    }
+    private void Died()
+    {
+        OnTowerDied?.Invoke(this);
     }
 
     public Tower GetTower()
     {
         return this;
     }
+
+    #region Event
+    public static event Action<Tower> OnTowerDied;
+    #endregion
 }
