@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TowerData_A
   m_EditorClassIdentifier: 
   towerName: "\uC800\uADF8"
+  health: 10
   list:
   - prefab: {fileID: 1890339956145347488, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0
