@@ -365,7 +365,7 @@ MonoBehaviour:
     Key: Assets/GameDang/B_Prefabs
     Ordinal: 29
     Priority: 0
-    IconType: 2110
+    IconType: 140
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0

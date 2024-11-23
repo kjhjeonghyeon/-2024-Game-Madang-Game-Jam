@@ -15,15 +15,15 @@ MonoBehaviour:
   towerName: "Debug_C \uC138\uACC4\uAD00"
   health: 10000
   list:
-  - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 6764022619791096572, guid: 9b19139d399abac41aaf10e1b04534fe, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 6764022619791096572, guid: f9e13b6c96e726f4da9ac78a06c66cd4, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 6764022619791096572, guid: 4d270de28ebe46b43a0ede1eed8c25f0, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 6764022619791096572, guid: 53621881c9e1f354589e6d44b99e20c4, type: 3}
     cost: 0
     spawnDealy: 0
