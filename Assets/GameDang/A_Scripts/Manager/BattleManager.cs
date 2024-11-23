@@ -4,21 +4,30 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class BattleManager : MonoBehaviour
 {
     [SerializeField] private UIResult uiResult;
+    private List<Ability> abilities;
     private void Start()
     {
         uiResult.panel.SetActive(false);
+        abilities = Ability.GetEnableAbilitys();
     }
     private void OnEnable()
     {
-        Tower.OnTowerDied += OnTowerDied;        
+        Tower.OnTowerDied += OnTowerDied;
+        foreach (Ability ability in abilities) {
+            ability.Enable();
+        }
     }
     private void OnDisable()
     {
         Tower.OnTowerDied -= OnTowerDied;        
+        foreach (Ability ability in abilities) {
+            ability.Disable();
+        }
     }
 
     private void OnTowerDied(Tower tower)
