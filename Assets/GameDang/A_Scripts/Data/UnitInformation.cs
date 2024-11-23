@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public struct UnitInformation
 {
-    public GameObject prefab;
+    public Unit prefab;
     /// <summary>
     /// 비용
     /// </summary>

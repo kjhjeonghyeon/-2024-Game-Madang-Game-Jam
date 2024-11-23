@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 [System.Serializable]
 public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
@@ -17,13 +18,9 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     {
         Helath = towerData.health;
     }
-    public Unit SpawnUnit(GameObject prefab)
+    public Unit SpawnUnit(Unit prefab)
     {
-        GameObject created = Instantiate(prefab);
-        Unit unit = created.GetComponent<Unit>();
-        if (!unit) {
-            throw new System.Exception("Unit Component가 없습니다.");
-        }
+        Unit unit = Instantiate(prefab);
         unit.name = "Unit_" + _activeUnits.Count;
         unit.Init(this);
         unit.transform.position = spawnLocation.position;

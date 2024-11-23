@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class UnitManager : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class UnitManager : MonoBehaviour
     }
 
     #region 소환 TEST 코드
-    [SerializeField] private GameObject debug_unitPrefab;
+    [SerializeField] private Unit debug_unitPrefab;
 
     [ContextMenu("Player Tower Unit Spawn")]
     public void Debug_SpawnUnit()
@@ -43,6 +44,7 @@ public class UnitManager : MonoBehaviour
     [ContextMenu("Enemy Unit Spawn")]
     public void Debug_SpawnEnemy()
     {
+        Assert.IsNotNull(debug_unitPrefab);
         TowerManager.EnemyTower.SpawnUnit(debug_unitPrefab);
     }
     #endregion
