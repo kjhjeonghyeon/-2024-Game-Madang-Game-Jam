@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 5990756065581739290}
   towerData: {fileID: 11400000, guid: ca7baefab7256e84bbb0d32511e92c60, type: 2}
+  skillDamage: 50
 --- !u!1001 &5408174834786247442
 PrefabInstance:
   m_ObjectHideFlags: 0

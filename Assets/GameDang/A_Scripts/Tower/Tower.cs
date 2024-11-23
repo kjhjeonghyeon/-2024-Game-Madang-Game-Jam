@@ -24,7 +24,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
         Unit unit = Instantiate(prefab);
         unit.name = "Unit_" + _activeUnits.Count;
         unit.Init(this);
-        unit.transform.position = spawnLocation.position;
+        unit.transform.position = spawnLocation.position + new Vector3(0, UnityEngine.Random.Range(0f, 1f), 0);
         _activeUnits.Add(unit);
         return unit;
     }
