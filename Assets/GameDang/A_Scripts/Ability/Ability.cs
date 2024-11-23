@@ -9,7 +9,7 @@ public abstract class Ability
     public static Dictionary<string, Tuple<bool, Ability>> abilityMap = new Dictionary<string, Tuple<bool, Ability>>
     {
         // 공용 8 개
-        { "000", new Tuple<bool, Ability>(true, new HPAbility()) }, // 자연 회복
+        { "000", new Tuple<bool, Ability>(true, new RecoveryAbility()) }, // 자연 회복
         { "001", new Tuple<bool, Ability>(false, new HPAbility()) }, // 치명타율
         { "002", new Tuple<bool, Ability>(true, new HPAbility()) }, // 최대 채력 O
         { "003", new Tuple<bool, Ability>(false, new HPAbility()) }, // 넉백

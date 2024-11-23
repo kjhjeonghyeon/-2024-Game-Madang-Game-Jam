@@ -31,6 +31,7 @@ public abstract class Unit : MonoBehaviour, IHit
         get { return health; }
         set { health = value; }
     }
+    private int MaxHealth;
     public int AttackPower
     {
         get { return attackPower; }
@@ -65,6 +66,26 @@ public abstract class Unit : MonoBehaviour, IHit
         direction = TowerManager.PlayerTower == onwer ? -1 : 1;
         OnSpawned?.Invoke(this);
         detectSystem.SetUnit(this);
+        if (TowerManager.PlayerTower == onwer) {
+            if (RecoveryAbility.Flag) {
+                StartCoroutine(RecoveryCoroutine());
+            }
+        }
+    }
+    private IEnumerator<WaitForSeconds> RecoveryCoroutine()
+    {
+        while (gameObject.activeSelf) {
+            if (Health < MaxHealth) {
+                Health += RecoveryAbility.Value;
+                Health = Mathf.Min(Health, MaxHealth);
+            }
+            yield return new WaitForSeconds(RecoveryAbility.Delay);
+        }
+        yield break;
+    }
+    private void Awake()
+    {
+        MaxHealth = Health;
     }
     private void Update()
     {
