@@ -1,9 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TowerA : Tower
 {
+    [SerializeField] private int skillDamage;
+    // 전체 대미지
     public override void Skill()
     {
-        Debug.Log("타워 A의 스킬");
+        List<Unit> units = new List<Unit>(TowerManager.EnemyTower.ActiveUnits);
+        foreach (Unit unit in units) {
+            unit.Hit(skillDamage);
+        }
     }
 }

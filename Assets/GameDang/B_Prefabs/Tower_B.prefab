@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 3638603394627223544}
   towerData: {fileID: 11400000, guid: d2659a2131e9dde4b980162338f9b8e4, type: 2}
+  count: 3
 --- !u!50 &-6617979135924290548
 Rigidbody2D:
   serializedVersion: 5
