@@ -5,10 +5,12 @@ public class UIManager : MonoBehaviour
     private void OnEnable()
     {
         Tower.OnTowerHited += OnTowerHited;
+        Tower.OnGoldChange += OnGoldChange;
     }   
     private void OnDisable()
     {
         Tower.OnTowerHited -= OnTowerHited;
+        Tower.OnGoldChange -= OnGoldChange;
     }
 
 
@@ -35,5 +37,10 @@ public class UIManager : MonoBehaviour
         } else {
             EnemeyHit(tower, damage);
         }
+    }
+
+    private void OnGoldChange(int gold)
+    {
+        Debug.Log("골드 변경 됨 현재 골드 : " + gold);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 // HP 증가 특성
 
-public class HPAbility : Ability
+public class APAbility : Ability
 {
     private static readonly int VALUE = 50;
     public override void Enable()
@@ -21,7 +21,7 @@ public class HPAbility : Ability
     {
         if (unit.Owner == TowerManager.PlayerTower)
         {
-            unit.AttackPower += VALUE;
+            unit.Health += VALUE;
         }        
     }
 }

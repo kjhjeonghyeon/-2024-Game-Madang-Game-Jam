@@ -6,17 +6,39 @@ using UnityEngine.Assertions;
 [System.Serializable]
 public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
 {
-    /*- Spawn 관련 -*/
+    # region Spawn 관련
     public List<Unit> ActiveUnits => _activeUnits;
     protected List<Unit> _activeUnits = new List<Unit>();
     [SerializeField] protected Transform spawnLocation;
+    # endregion
 
     /*- Unit 관련 -*/
     [SerializeField] protected TowerData towerData;
     public int Helath { get; private set; }
+
+    /// <summary>
+    /// Tower Gold
+    /// </summary>
+    public int Gold { get; private set; }
+
+    /// <summary>
+    /// Gold 수급 주기
+    /// </summary>
+    public float interest = 1f;
+    public int interestValue = 50;
+    private float interestDelay = 0f;
     private void Awake()
     {
         Helath = towerData.health;
+    }
+    private void Update()
+    {
+        if (interestDelay <= 0) {
+            Gold += interestValue;
+            OnGoldChange?.Invoke(Gold);
+            interestDelay = interest;
+        }
+        interestDelay -= Time.deltaTime;
     }
     public Unit SpawnUnit(Unit prefab)
     {
@@ -29,10 +51,8 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     }
 
     public UnitInformation GetUnitInformation(int index) => towerData.list[index];
-
     public void Hit(int damage)
     {
-        Debug.Log(gameObject.name + " : " + damage + " 피해 !");
         Helath -= damage;
         OnTowerHited?.Invoke(this, damage);
         if (Helath <= 0) {
@@ -52,5 +72,6 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     #region Event
     public static event Action<Tower> OnTowerDied;
     public static event Action<Tower, int> OnTowerHited;
+    public static event Action<int> OnGoldChange;
     #endregion
 }
