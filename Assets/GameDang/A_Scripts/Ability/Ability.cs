@@ -22,6 +22,10 @@ public abstract class Ability
     {
         return abilityMap.Where(pair => pair.Value.Item1).Select(pair => pair.Value.Item2).ToList();
     }
+    public static List<Ability> GetSelectAbleAbilitys()
+    {
+        return abilityMap.Where(pair => !pair.Value.Item1).Select(pair => pair.Value.Item2).ToList();
+    }
     public abstract void Enable();
     public abstract void Disable();
 }

@@ -5,5 +5,9 @@ using UnityEngine;
 
 public class AbilityManager : MonoBehaviour
 {
-    
+    private void Start()
+    {
+        List<Ability> abilities = Ability.GetSelectAbleAbilitys();
+        Debug.Log(abilities.Count);
+    }
 }
