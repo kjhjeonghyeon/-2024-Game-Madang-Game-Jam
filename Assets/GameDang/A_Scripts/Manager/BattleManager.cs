@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class BattleManager : MonoBehaviour
 {
     [SerializeField] private UIResult uiResult;
-    private List<Ability> abilities;
+    private List<Ability> abilities = new List<Ability>();
     private void Start()
     {
         uiResult.panel.SetActive(false);

@@ -34,6 +34,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     {
         Debug.Log(gameObject.name + " : " + damage + " 피해 !");
         Helath -= damage;
+        OnTowerHited?.Invoke(this, damage);
         if (Helath <= 0) {
             Died();
         }
@@ -50,5 +51,6 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
 
     #region Event
     public static event Action<Tower> OnTowerDied;
+    public static event Action<Tower, int> OnTowerHited;
     #endregion
 }
