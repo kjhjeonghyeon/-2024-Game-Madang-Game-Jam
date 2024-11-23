@@ -9,12 +9,12 @@ public abstract class Ability
     public static Dictionary<string, Tuple<bool, Ability>> abilityMap = new Dictionary<string, Tuple<bool, Ability>>
     {
         // 공용 8 개
-        { "000", new Tuple<bool, Ability>(true, new RecoveryAbility()) }, // 자연 회복
-        { "001", new Tuple<bool, Ability>(true, new CriticalAbility()) }, // 치명타율
-        { "002", new Tuple<bool, Ability>(true, new HPAbility()) }, // 최대 채력 O
+        { "000", new Tuple<bool, Ability>(false, new RecoveryAbility()) }, // 자연 회복
+        { "001", new Tuple<bool, Ability>(false, new CriticalAbility()) }, // 치명타율
+        { "002", new Tuple<bool, Ability>(false, new HPAbility()) }, // 최대 채력 O
         { "003", new Tuple<bool, Ability>(false, new HPAbility()) }, // 넉백
         { "004", new Tuple<bool, Ability>(false, new APAbility()) }, // 공격력 증가 O
-        { "005", new Tuple<bool, Ability>(true, new GoldAbility()) }, // 초당 재화 O
+        { "005", new Tuple<bool, Ability>(false, new GoldAbility()) }, // 초당 재화 O
         { "006", new Tuple<bool, Ability>(false, new HPAbility()) }, // 생산 쿨 감소
         { "007", new Tuple<bool, Ability>(false, new HPAbility()) }, // 필살기 쿨 감소
     };

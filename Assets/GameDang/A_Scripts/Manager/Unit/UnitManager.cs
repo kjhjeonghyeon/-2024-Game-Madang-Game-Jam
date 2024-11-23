@@ -22,8 +22,15 @@ public class UnitManager : MonoBehaviour
             SpawnByIndex(2);
         if (Input.GetKeyDown(KeyCode.Alpha4))
             SpawnByIndex(3);
-        if (Input.GetKeyDown(KeyCode.Space))
-            Debug_SpawnEnemy();
+
+        if (Input.GetKeyDown(KeyCode.Q))
+            SpawnEnemyByIndex(0);
+        if (Input.GetKeyDown(KeyCode.W))
+            SpawnEnemyByIndex(1);
+        if (Input.GetKeyDown(KeyCode.E))
+            SpawnEnemyByIndex(2);
+        if (Input.GetKeyDown(KeyCode.R))
+            SpawnEnemyByIndex(3);
     }
 
     // 이 함수 호출하면 Unit 이 소환됨 index 는 현재 0 ~ 3 구간임 벗어나면 오류
@@ -33,6 +40,13 @@ public class UnitManager : MonoBehaviour
         Tower playerTower = TowerManager.PlayerTower;
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
         playerTower.SpawnUnit(unitInfo.prefab);
+    }
+
+    public void SpawnEnemyByIndex(int index)
+    {
+        Tower tower = TowerManager.EnemyTower;
+        UnitInformation unitInfo = tower.GetUnitInformation(index);
+        tower.SpawnUnit(unitInfo.prefab);
     }
 
     #region 소환 TEST 코드
