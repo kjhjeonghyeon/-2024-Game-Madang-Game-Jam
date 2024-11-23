@@ -58,12 +58,14 @@ public abstract class Unit : MonoBehaviour, IHit
     /// 이동 방향 1 이면 오른쪽 -1 이면 왼쪽
     /// </summary>
     private int direction = 1;
+    protected bool IsMine { get; set; }
     [SerializeField] private DetectSystem detectSystem;
 
     public void Init(Tower onwer)
     {
         Owner = onwer;
         direction = TowerManager.PlayerTower == onwer ? -1 : 1;
+        IsMine = TowerManager.PlayerTower == onwer;
         OnSpawned?.Invoke(this);
         detectSystem.SetUnit(this);
         if (TowerManager.PlayerTower == onwer) {
@@ -127,9 +129,13 @@ public abstract class Unit : MonoBehaviour, IHit
 
     public void Hit(int damage)
     {
-        Debug.Log(gameObject.name + " : " + damage + " 피해 !");
+        // Debug.Log(gameObject.name + " : " + damage + " 피해 !");
         health -= damage;
         if (health <= 0) {
+            if (IsMine && TowerC.IsInvincibility) {
+                health = 1;
+                return;                
+            }
             Dead();
         }
     }

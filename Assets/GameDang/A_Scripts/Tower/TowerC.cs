@@ -1,9 +1,19 @@
+using System.Collections;
 using UnityEngine;
 
 public class TowerC : Tower
 {
+    public static bool IsInvincibility = false;
+    [SerializeField] private float Time;
     public override void Skill()
     {
-        Debug.Log("타워 C의 스킬");
+        StartCoroutine(Run());
     }
+
+    private IEnumerator Run() {
+        IsInvincibility = true;
+        yield return new WaitForSeconds(Time);
+        IsInvincibility = false;
+    }
+    
 }
