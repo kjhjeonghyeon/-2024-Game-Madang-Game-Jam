@@ -10,6 +10,7 @@ public class HPAbility : Ability
     private static readonly int VALUE = 50;
     public override void Enable()
     {
+        Debug.Log("Enable");
         Unit.OnSpawned += OnUnitSpawned;
     }
     public override void Disable()
@@ -19,10 +20,10 @@ public class HPAbility : Ability
 
     public void OnUnitSpawned(Unit unit)
     {
+        Debug.Log("Unit이 Spawn되었습니다.");
         if (unit.Owner == TowerManager.PlayerTower)
         {
             unit.Health += VALUE;
-        }
-        Debug.Log("Unit이 Spawn되었습니다.");
+        }        
     }
 }

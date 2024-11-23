@@ -9,15 +9,15 @@ using System.Collections.Generic;
 public class BattleManager : MonoBehaviour
 {
     [SerializeField] private UIResult uiResult;
-    private List<Ability> abilities = new List<Ability>();
+    private List<Ability> abilities;
     private void Start()
     {
         uiResult.panel.SetActive(false);
-        abilities = Ability.GetEnableAbilitys();
     }
     private void OnEnable()
-    {
+    {   
         Tower.OnTowerDied += OnTowerDied;
+        abilities = Ability.GetEnableAbilitys();
         foreach (Ability ability in abilities) {
             ability.Enable();
         }
