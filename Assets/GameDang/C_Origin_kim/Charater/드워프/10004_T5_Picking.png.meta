@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      10004_T5_Picking_0: 8767629160979565714
+      10004_T5_Picking_1: 5604638363123214384
+      10004_T5_Picking_2: -2090398889056712167
+      10004_T5_Picking_3: -4869108505694120288
+      10004_T5_Picking_4: -4668621711649902391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

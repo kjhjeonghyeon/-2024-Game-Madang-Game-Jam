@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character_Komodo_0: -7727598315386379134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
