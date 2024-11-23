@@ -79,10 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84053f83004765b4fa8d16e22b5bdbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnLocation: {fileID: 3638603394627223544, guid: 01ccac0addaf8e242b143f1649436ace, type: 3}
+  spawnLocation: {fileID: 5990756065581739290}
   towerData: {fileID: 11400000, guid: d2659a2131e9dde4b980162338f9b8e4, type: 2}
-  interest: 1
-  interestValue: 50
 --- !u!50 &6755806907208155644
 Rigidbody2D:
   serializedVersion: 5

@@ -13,6 +13,8 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private List<GameObject> towerPrefabs;
     [SerializeField] private Transform playerTowerPosition;
     [SerializeField] private Transform enemyTowerPosition;
+    [SerializeField] private GameObject[] uIPlayer;
+    [SerializeField] private GameObject[] uIEnumy;
     private static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
 
     public static Tower PlayerTower { get; private set; }
@@ -22,6 +24,7 @@ public class TowerManager : MonoBehaviour
     private void Awake()
     {
         InitTowers();
+        
     }
 
     private Tower SpawnTower(GameObject prefab, Transform location)
@@ -45,8 +48,10 @@ public class TowerManager : MonoBehaviour
     {
         PlayerTower = SpawnTower(towerPrefabs[playerSelectTowerIndex], playerTowerPosition);        
         activeKeys.Remove(playerSelectTowerIndex);
+        uIPlayer[playerSelectTowerIndex].SetActive(true);
         int enemyTowerIndex = GetRandomEnemeyTowerIndex();
         EnemyTower = SpawnTower(towerPrefabs[enemyTowerIndex], enemyTowerPosition);
         activeKeys.Remove(enemyTowerIndex);
+        uIEnumy[enemyTowerIndex].SetActive(true);
     }
 }
