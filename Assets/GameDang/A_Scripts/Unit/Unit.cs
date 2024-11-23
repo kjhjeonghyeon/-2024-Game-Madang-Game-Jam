@@ -63,7 +63,7 @@ public abstract class Unit : MonoBehaviour, IHit
     public void Init(Tower onwer)
     {
         Owner = onwer;
-        direction = TowerManager.PlayerTower == onwer ? 1 : -1;
+        direction = TowerManager.PlayerTower == onwer ? -1 : 1;
         OnSpawned?.Invoke(this);
         detectSystem.SetUnit(this);
         if (TowerManager.PlayerTower == onwer) {
