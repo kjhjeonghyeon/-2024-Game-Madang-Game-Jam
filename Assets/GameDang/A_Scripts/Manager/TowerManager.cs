@@ -14,8 +14,10 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private Transform playerTowerPosition;
     [SerializeField] private Transform enemyTowerPosition;
     private static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
+
     public static Tower PlayerTower { get; private set; }
     public static Tower EnemyTower { get; private set; }
+    [SerializeField] private Player player;
 
     private void Awake()
     {
@@ -41,7 +43,7 @@ public class TowerManager : MonoBehaviour
     // Tower 를 생성하고 배치하는것
     private void InitTowers()
     {
-        PlayerTower = SpawnTower(towerPrefabs[playerSelectTowerIndex], playerTowerPosition);
+        PlayerTower = SpawnTower(towerPrefabs[playerSelectTowerIndex], playerTowerPosition);        
         activeKeys.Remove(playerSelectTowerIndex);
         int enemyTowerIndex = GetRandomEnemeyTowerIndex();
         EnemyTower = SpawnTower(towerPrefabs[enemyTowerIndex], enemyTowerPosition);

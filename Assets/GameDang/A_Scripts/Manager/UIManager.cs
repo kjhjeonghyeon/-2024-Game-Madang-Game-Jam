@@ -5,12 +5,12 @@ public class UIManager : MonoBehaviour
     private void OnEnable()
     {
         Tower.OnTowerHited += OnTowerHited;
-        Tower.OnGoldChange += OnGoldChange;
+        Player.OnGoldChange += OnGoldChange;
     }   
     private void OnDisable()
     {
         Tower.OnTowerHited -= OnTowerHited;
-        Tower.OnGoldChange -= OnGoldChange;
+        Player.OnGoldChange -= OnGoldChange;
     }
 
 

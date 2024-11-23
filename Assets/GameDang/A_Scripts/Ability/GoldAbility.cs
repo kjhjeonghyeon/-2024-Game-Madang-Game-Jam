@@ -7,13 +7,14 @@ using UnityEngine;
 
 public class GoldAbility : Ability
 {
+    public static int BounsGold { get; private set;}
     private static readonly int VALUE = 10;
     public override void Enable()
     {
-        TowerManager.PlayerTower.interestValue += VALUE;
+        BounsGold = VALUE;
     }
     public override void Disable()
     {
-        TowerManager.PlayerTower.interestValue -= VALUE;
+        BounsGold = 0;
     }
 }
