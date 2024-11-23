@@ -62,6 +62,6 @@ public class TowerManager : MonoBehaviour
         EnemyTower.GetComponentInChildren<SpriteRenderer>().flipX = true;
         uIBackGround[enemyTowerIndex].SetActive(true);
         uIEnumy[enemyTowerIndex].SetActive(true);
-        enumyrSelectTowerIndex = enemyTowerIndex;
+        EnumySelectTowerIndex = enemyTowerIndex;
     }
 }

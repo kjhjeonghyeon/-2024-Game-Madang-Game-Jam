@@ -1,12 +1,21 @@
-using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class HP : MonoBehaviour
 {
-   
-   
-    
+
+    [SerializeField] Slider[] hP;
+    [SerializeField] Slider[] hPEnumy;
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
     private void OnEnable()
     {
         Tower.OnTowerHited += OnTowerHited;
@@ -19,20 +28,16 @@ public class UIManager : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// 플레이어가 데미지 입었을때
-    /// </summary>
+  
     private void PlayerHit(Tower tower, int damage)
     {
-
+        hP[TowerManager.PlayerSelectTowerIndex].value = tower.Helath;
         Debug.Log("플레이어 데미지 입음 : " + damage + "\n 남은 채력" + tower.Helath);
     }
 
-    /// <summary>
-    /// 상대방이 데미지 입었을때
-    /// </summary>    
     private void EnemeyHit(Tower tower, int damage)
     {
+        hPEnumy[TowerManager.EnumySelectTowerIndex].value = tower.Helath;
         Debug.Log("상대방 데미지 입음 : " + damage + "\n 남은 채력" + tower.Helath);
     }
 
@@ -53,8 +58,4 @@ public class UIManager : MonoBehaviour
         // Debug.Log("골드 변경 됨 현재 골드 : " + gold);
     }
 
-    public void OnSkillButtonClick()
-    {
-        TowerManager.PlayerTower.Skill();
-    }
 }
