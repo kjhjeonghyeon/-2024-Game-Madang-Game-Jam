@@ -52,6 +52,7 @@ public class TowerManager : MonoBehaviour
         int enemyTowerIndex = GetRandomEnemeyTowerIndex();
         EnemyTower = SpawnTower(towerPrefabs[enemyTowerIndex], enemyTowerPosition);
         activeKeys.Remove(enemyTowerIndex);
+        EnemyTower.GetComponentInChildren<SpriteRenderer>().flipX = true;
         uIEnumy[enemyTowerIndex].SetActive(true);
     }
 }
