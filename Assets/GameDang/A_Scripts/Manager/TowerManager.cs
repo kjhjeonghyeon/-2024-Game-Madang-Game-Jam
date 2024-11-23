@@ -15,6 +15,7 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private Transform enemyTowerPosition;
     [SerializeField] private GameObject[] uIPlayer;
     [SerializeField] private GameObject[] uIEnumy;
+    [SerializeField] private GameObject[] uIBackGround;
     private static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
 
     public static Tower PlayerTower { get; private set; }
@@ -53,6 +54,7 @@ public class TowerManager : MonoBehaviour
         EnemyTower = SpawnTower(towerPrefabs[enemyTowerIndex], enemyTowerPosition);
         activeKeys.Remove(enemyTowerIndex);
         EnemyTower.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        uIBackGround[enemyTowerIndex].SetActive(true);
         uIEnumy[enemyTowerIndex].SetActive(true);
     }
 }
