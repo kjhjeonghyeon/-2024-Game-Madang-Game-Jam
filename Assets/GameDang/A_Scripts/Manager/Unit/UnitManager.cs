@@ -3,11 +3,14 @@ using UnityEngine.Assertions;
 
 public class UnitManager : MonoBehaviour
 {
+
+    [SerializeField]
+
     private void Update()
     {
         ButtonControl();
     }
-    
+
     // 디버깅용 의미 없는 함수 GUI 대신에 키패드를 누르개 만들었을 뿐임
     private void ButtonControl()
     {
@@ -48,4 +51,24 @@ public class UnitManager : MonoBehaviour
         TowerManager.EnemyTower.SpawnUnit(debug_unitPrefab);
     }
     #endregion
+
+
+    public void Unit_1()
+    {
+        SpawnByIndex(0);
+    }
+    public void Unit_2()
+    {
+        SpawnByIndex(1);
+    }
+    public void Unit_3()
+    {
+        SpawnByIndex(2);
+    }
+    public void Unit_4()
+    {
+        SpawnByIndex(3);
+    }
+
+
 }
