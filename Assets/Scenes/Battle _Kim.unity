@@ -997,6 +997,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 192725723858394053, guid: 417bd38196d3bfc46a63c2b90e12dad3, type: 3}
+      propertyPath: m_Name
+      value: Image_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 192725723858394053, guid: 417bd38196d3bfc46a63c2b90e12dad3, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1004,6 +1008,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 754042946}
+    - target: {fileID: 1291482628200732113, guid: 417bd38196d3bfc46a63c2b90e12dad3, type: 3}
+      propertyPath: m_Name
+      value: Image_D
+      objectReference: {fileID: 0}
     - target: {fileID: 1291482628200732113, guid: 417bd38196d3bfc46a63c2b90e12dad3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1198,8 +1206,8 @@ MonoBehaviour:
   uIBackGround:
   - {fileID: 1399873298}
   - {fileID: 1999757541}
-  - {fileID: 2139808912}
   - {fileID: 1067922959}
+  - {fileID: 2139808912}
   player: {fileID: 0}
 --- !u!4 &1126601351
 Transform:
