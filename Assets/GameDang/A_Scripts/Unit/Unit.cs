@@ -99,7 +99,10 @@ public abstract class Unit : MonoBehaviour, IHit
     private void FixedUpdate()
     {
         if (!isTarget) {
-            transform.position += (Vector3) Vector2.right  * direction * Time.deltaTime * speed;  // 5 이부분 speed 들어가야함 하드코딩임
+            Vector3 calculate = (Vector3) Vector2.right  * direction * Time.deltaTime * speed;
+            if (IsMine)
+                calculate *= TowerD.SpeedUpValue;
+            transform.position += calculate;
         }
     }
 
