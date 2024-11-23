@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class TowerA : Tower
+public class TowerD : Tower
 {
     public override void Skill()
     {
-        Debug.Log("타워 A의 스킬");
+        Debug.Log("타워 D의 스킬");
     }
 }
