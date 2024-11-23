@@ -15,30 +15,9 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     /*- Unit 관련 -*/
     [SerializeField] protected TowerData towerData;
     public int Helath { get; private set; }
-
-    /// <summary>
-    /// Tower Gold
-    /// </summary>
-    public int Gold { get; private set; }
-
-    /// <summary>
-    /// Gold 수급 주기
-    /// </summary>
-    public float interest = 1f;
-    public int interestValue = 50;
-    private float interestDelay = 0f;
     private void Awake()
     {
         Helath = towerData.health;
-    }
-    private void Update()
-    {
-        if (interestDelay <= 0) {
-            Gold += interestValue;
-            OnGoldChange?.Invoke(Gold);
-            interestDelay = interest;
-        }
-        interestDelay -= Time.deltaTime;
     }
     public Unit SpawnUnit(Unit prefab)
     {
@@ -72,6 +51,5 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
     #region Event
     public static event Action<Tower> OnTowerDied;
     public static event Action<Tower, int> OnTowerHited;
-    public static event Action<int> OnGoldChange;
     #endregion
 }
