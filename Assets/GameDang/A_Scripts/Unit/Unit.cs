@@ -118,6 +118,10 @@ public abstract class Unit : MonoBehaviour, IHit
     protected virtual void Attack()
     {
         int calculatePower = attackPower; // 추가 데미지 필요할경우 해당 변수 조정
+        if (TowerManager.PlayerTower == Owner && Util.Dice(CriticalAbility.Value)) {
+            Debug.Log("크리티컬!");
+            calculatePower *= 2;
+        }
         attackTarget.Hit(calculatePower);
     }
 
@@ -134,6 +138,22 @@ public abstract class Unit : MonoBehaviour, IHit
         Owner.ActiveUnits.Remove(this);
         gameObject.SetActive(false);
         OnDied?.Invoke(this);
+    }
+
+    private void OnEnable()
+    {
+        OnDied += OnUnitDied;
+    }
+
+    private void OnDisable()
+    {
+        OnDied -= OnUnitDied;
+    }
+    private void OnUnitDied(Unit unit)
+    {
+        if ((IHit) unit == attackTarget) {
+            attackTarget = null;
+        }
     }
 
 

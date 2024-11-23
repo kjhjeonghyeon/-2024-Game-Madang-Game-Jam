@@ -10,7 +10,7 @@ public abstract class Ability
     {
         // 공용 8 개
         { "000", new Tuple<bool, Ability>(true, new RecoveryAbility()) }, // 자연 회복
-        { "001", new Tuple<bool, Ability>(false, new HPAbility()) }, // 치명타율
+        { "001", new Tuple<bool, Ability>(true, new CriticalAbility()) }, // 치명타율
         { "002", new Tuple<bool, Ability>(true, new HPAbility()) }, // 최대 채력 O
         { "003", new Tuple<bool, Ability>(false, new HPAbility()) }, // 넉백
         { "004", new Tuple<bool, Ability>(false, new APAbility()) }, // 공격력 증가 O

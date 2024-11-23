@@ -43,4 +43,9 @@ public class UIManager : MonoBehaviour
     {
         // Debug.Log("골드 변경 됨 현재 골드 : " + gold);
     }
+
+    public void OnSkillButtonClick()
+    {
+        TowerManager.PlayerTower.Skill();
+    }
 }
