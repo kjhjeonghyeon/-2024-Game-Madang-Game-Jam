@@ -103,10 +103,21 @@ public abstract class Unit : MonoBehaviour, IHit
     public void Hit(int damage)
     {
         Debug.Log(gameObject.name + " : " + damage + " 피해 !");
+        health -= damage;
+        if (health <= 0) {
+            Dead();
+        }
+    }
+    private void Dead()
+    {
+        Owner.ActiveUnits.Remove(this);
+        gameObject.SetActive(false);
+        OnDied?.Invoke(this);
     }
 
 
     #region 이벤트
     public static event Action<Unit> OnSpawned;
+    public static event Action<Unit> OnDied;
     # endregion
 }

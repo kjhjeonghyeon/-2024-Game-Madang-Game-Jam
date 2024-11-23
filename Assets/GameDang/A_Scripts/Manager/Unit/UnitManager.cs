@@ -6,8 +6,7 @@ public class UnitManager : MonoBehaviour
     {
         ButtonControl();
     }
-
-        
+    
     // 디버깅용 의미 없는 함수 GUI 대신에 키패드를 누르개 만들었을 뿐임
     private void ButtonControl()
     {
@@ -19,6 +18,8 @@ public class UnitManager : MonoBehaviour
             SpawnByIndex(2);
         if (Input.GetKeyDown(KeyCode.Alpha4))
             SpawnByIndex(3);
+        if (Input.GetKeyDown(KeyCode.Space))
+            Debug_SpawnEnemy();
     }
 
     // 이 함수 호출하면 Unit 이 소환됨 index 는 현재 0 ~ 3 구간임 벗어나면 오류
