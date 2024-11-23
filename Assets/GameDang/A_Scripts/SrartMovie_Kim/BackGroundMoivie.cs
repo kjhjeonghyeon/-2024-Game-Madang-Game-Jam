@@ -30,16 +30,17 @@ public class BackGroundMoivie : MonoBehaviour
     float speed = 15;
     bool bSelect = false;
     int iT1 = 0;
+    int selec=-1;
     void Start()
     {
-
+        TowerManager.PlayerSelectTowerIndex = selec;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
     }
     private void FixedUpdate()
     {
@@ -64,6 +65,8 @@ public class BackGroundMoivie : MonoBehaviour
 
     public void buttonA()
     {
+        selec = 0;
+        TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
         imageC.sprite = spritesC[120];
@@ -81,11 +84,11 @@ public class BackGroundMoivie : MonoBehaviour
 
         bSelect = true;
 
-
     }
     public void buttonB()
     {
-
+        selec = 1;
+        TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
         imageC.sprite = spritesC[120];
@@ -108,7 +111,8 @@ public class BackGroundMoivie : MonoBehaviour
     }
     public void buttonC()
     {
-
+        selec = 2;
+        TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
         imageC.sprite = spritesC[120];
@@ -132,6 +136,8 @@ public class BackGroundMoivie : MonoBehaviour
     }
     public void buttonD()
     {
+        selec = 3;
+        TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
         imageC.sprite = spritesC[120];
@@ -151,4 +157,6 @@ public class BackGroundMoivie : MonoBehaviour
         
 
     }
+
+
 }
