@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BackGroundMoivie : MonoBehaviour
 {
 
-
+    public GameObject startButton;
     public Image image_offA;
     public Image image_offB;
     public Image image_offC;
@@ -66,6 +66,7 @@ public class BackGroundMoivie : MonoBehaviour
     public void buttonA()
     {
         selec = 0;
+        startButton.SetActive(true);
         TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
@@ -88,6 +89,7 @@ public class BackGroundMoivie : MonoBehaviour
     public void buttonB()
     {
         selec = 1;
+        startButton.SetActive(true);
         TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
@@ -112,6 +114,7 @@ public class BackGroundMoivie : MonoBehaviour
     public void buttonC()
     {
         selec = 2;
+        startButton.SetActive(true);
         TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
@@ -137,6 +140,7 @@ public class BackGroundMoivie : MonoBehaviour
     public void buttonD()
     {
         selec = 3;
+        startButton.SetActive(true);
         TowerManager.PlayerSelectTowerIndex = selec;
         imageA.sprite = spritesA[0];
         imageB.sprite = spritesB[0];
