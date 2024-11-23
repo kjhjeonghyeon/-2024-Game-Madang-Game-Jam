@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+
+    [SerializeField] GameObject[] hP;
     private void OnEnable()
     {
         Tower.OnTowerHited += OnTowerHited;
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     private void PlayerHit(Tower tower, int damage)
     {
+        
         Debug.Log("플레이어 데미지 입음 : " + damage + "\n 남은 채력" + tower.Helath);
     }
 
