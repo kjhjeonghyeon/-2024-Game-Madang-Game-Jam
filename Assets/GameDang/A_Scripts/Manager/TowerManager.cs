@@ -9,7 +9,13 @@ public class TowerManager : MonoBehaviour
     {
         get { return playerSelectTowerIndex; }
         set { playerSelectTowerIndex = value; }
-    }    
+    }
+    private static int enumyrSelectTowerIndex = -1;
+    public static int EnumySelectTowerIndex
+    {
+        get { return enumyrSelectTowerIndex; }
+        set { enumyrSelectTowerIndex = value; }
+    }
     [SerializeField] private List<GameObject> towerPrefabs;
     [SerializeField] private Transform playerTowerPosition;
     [SerializeField] private Transform enemyTowerPosition;
@@ -56,5 +62,6 @@ public class TowerManager : MonoBehaviour
         EnemyTower.GetComponentInChildren<SpriteRenderer>().flipX = true;
         uIBackGround[enemyTowerIndex].SetActive(true);
         uIEnumy[enemyTowerIndex].SetActive(true);
+        enumyrSelectTowerIndex = enemyTowerIndex;
     }
 }

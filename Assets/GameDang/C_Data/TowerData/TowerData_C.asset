@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TowerData_C
   m_EditorClassIdentifier: 
   towerName: "Debug_C \uC138\uACC4\uAD00"
-  health: 10
+  health: 10000
   list:
   - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
     cost: 0

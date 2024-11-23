@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
 
-    [SerializeField] GameObject[] hP;
+    [SerializeField] Slider[] hP;
+    
     private void OnEnable()
     {
         Tower.OnTowerHited += OnTowerHited;
@@ -21,7 +23,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     private void PlayerHit(Tower tower, int damage)
     {
-        
+       // hP[TowerManager.PlayerSelectTowerIndex].value =  tower.Helath / 10000;
         Debug.Log("플레이어 데미지 입음 : " + damage + "\n 남은 채력" + tower.Helath);
     }
 
@@ -30,6 +32,7 @@ public class UIManager : MonoBehaviour
     /// </summary>    
     private void EnemeyHit(Tower tower, int damage)
     {
+        //hP[TowerManager.EnumySelectTowerIndex].value =  tower.Helath / 10000;
         Debug.Log("상대방 데미지 입음 : " + damage + "\n 남은 채력" + tower.Helath);
     }
 
