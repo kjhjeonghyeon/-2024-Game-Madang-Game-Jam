@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class HPAbility : Ability
 {
+    private static readonly int VALUE = 50;
     public override void Enable()
     {
         Unit.OnSpawned += OnUnitSpawned;
@@ -20,7 +21,7 @@ public class HPAbility : Ability
     {
         if (unit.Owner == TowerManager.PlayerTower)
         {
-            unit.Health += 50;
+            unit.Health += VALUE;
         }
         Debug.Log("Unit이 Spawn되었습니다.");
     }
