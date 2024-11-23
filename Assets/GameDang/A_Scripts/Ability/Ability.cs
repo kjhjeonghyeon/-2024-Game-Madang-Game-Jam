@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+// 0, 3, 4
 public abstract class Ability
 {
     public static Dictionary<string, Tuple<bool, Ability>> abilityMap = new Dictionary<string, Tuple<bool, Ability>>
@@ -15,7 +16,7 @@ public abstract class Ability
         { "004", new Tuple<bool, Ability>(false, new HPAbility()) },
         { "005", new Tuple<bool, Ability>(false, new HPAbility()) },
         { "006", new Tuple<bool, Ability>(false, new HPAbility()) },
-        { "007", new Tuple<bool, Ability>(false, new HPAbility()) }
+        { "007", new Tuple<bool, Ability>(false, new HPAbility()) },
     };
     public static List<Ability> GetEnableAbilitys()
     {
