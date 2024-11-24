@@ -17,6 +17,7 @@ public class Enemy
     {
         if (delay <= 0) {
             Spawn();
+            
             delay = Random.Range(minSpawnDelay, maxSpawnDelay);
         }
         delay -= Time.deltaTime;             
@@ -25,5 +26,7 @@ public class Enemy
     {
         UnitInformation unit = tower.GetUnitInformation(Random.Range(0, 4));
         tower.SpawnUnit(unit.prefab);
+
+
     }
 }
