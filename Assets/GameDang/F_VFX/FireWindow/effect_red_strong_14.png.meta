@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      effect_red_strong_14_0: 5376133634350633876
+      effect_red_strong_14_1: -9086434316570511659
+      effect_red_strong_14_10: -3343538562035008799
+      effect_red_strong_14_11: -6323787434449201009
+      effect_red_strong_14_2: 576126062576158291
+      effect_red_strong_14_3: 8470350995570872285
+      effect_red_strong_14_4: 438506213220845214
+      effect_red_strong_14_5: -329948762168082432
+      effect_red_strong_14_6: 3332927912826135829
+      effect_red_strong_14_7: 5558133533293876437
+      effect_red_strong_14_8: -5004379596360865056
+      effect_red_strong_14_9: 8334533202958238993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

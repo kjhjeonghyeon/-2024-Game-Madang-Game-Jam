@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      effect_sunshine_5_0: 7976279845821850784
+      effect_sunshine_5_1: -1902086830940534419
+      effect_sunshine_5_2: 5663079092294037556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

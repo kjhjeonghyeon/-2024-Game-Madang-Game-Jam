@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      effect_sunshine_9_0: 3469857920089238575
+      effect_sunshine_9_1: -5089223414674942212
+      effect_sunshine_9_2: -2419362849972045088
+      effect_sunshine_9_3: -6280627686815706723
+      effect_sunshine_9_4: -3648546166378130731
+      effect_sunshine_9_5: -6910842273904367141
+      effect_sunshine_9_6: -4570840389017483514
+      effect_sunshine_9_7: 4804939239994477642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
