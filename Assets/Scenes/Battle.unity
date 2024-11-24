@@ -844,7 +844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4fd216420188164ebfc88b6e35ed443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 0
+  goldInterval: 1
+  goldIntervalValue: 100
 --- !u!4 &569917238
 Transform:
   m_ObjectHideFlags: 0
@@ -2735,6 +2736,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1785486790}
     m_Modifications:
+    - target: {fileID: 472508895441861370, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 472508895441861370, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 472508895441861370, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5704346
+      objectReference: {fileID: 0}
+    - target: {fileID: 472508895441861370, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.2048035
+      objectReference: {fileID: 0}
     - target: {fileID: 1372412667834930994, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2822,6 +2839,10 @@ PrefabInstance:
     - target: {fileID: 2089742747063417933, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
       propertyPath: m_Name
       value: Canvas_Player_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089742747063417933, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6012813539825164153, guid: a9838a4a1f991c040b35c698814d616d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

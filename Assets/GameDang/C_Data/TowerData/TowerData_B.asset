@@ -16,14 +16,14 @@ MonoBehaviour:
   health: 10000
   list:
   - prefab: {fileID: 6764022619791096572, guid: 2e5595b3ba3c276429c20b9ce9d0539c, type: 3}
-    cost: 0
-    spawnDealy: 0
+    cost: 50
+    spawnDealy: 2
   - prefab: {fileID: 6764022619791096572, guid: f84d11ad82a391a4f846447d7fc362ef, type: 3}
-    cost: 0
-    spawnDealy: 0
+    cost: 50
+    spawnDealy: 2
   - prefab: {fileID: 6764022619791096572, guid: be429233646c73f43a31eecf83e84c3f, type: 3}
-    cost: 0
-    spawnDealy: 0
+    cost: 50
+    spawnDealy: 2
   - prefab: {fileID: 6764022619791096572, guid: 6835ca6df2ddb654aba65e76b8c63578, type: 3}
-    cost: 0
-    spawnDealy: 0
+    cost: 50
+    spawnDealy: 2
