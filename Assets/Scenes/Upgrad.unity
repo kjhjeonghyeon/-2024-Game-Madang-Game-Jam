@@ -167,15 +167,14 @@ MonoBehaviour:
     abilityGroup: {fileID: 1609083622}
     prefab: {fileID: 639545728910094973, guid: c722a9c2330abd94e9975920c98c1c2b, type: 3}
   abilityItemDatas:
+  - {fileID: 11400000, guid: 0be60fd5bb3bda046b3c5ec7554f4e09, type: 2}
   - {fileID: 11400000, guid: 176a4cf07dbf37243ad156faf0e6d5d5, type: 2}
-  - {fileID: 11400000, guid: e371aa12a03c1064bbc3cbf558138a5f, type: 2}
   - {fileID: 11400000, guid: 118111929b1388a4ba2d33801d0adc6e, type: 2}
   - {fileID: 11400000, guid: 024b20d12ad636a4eb450c7fd70e7e23, type: 2}
   - {fileID: 11400000, guid: e1ffbaff22896e2428c3913b782fdd85, type: 2}
   - {fileID: 11400000, guid: eba5c26b26edc7b40841bf75a59b9e1d, type: 2}
   - {fileID: 11400000, guid: 19a3cefceb16d7345bb7a6918ff4afd7, type: 2}
   - {fileID: 11400000, guid: 13cbd99ddc39e7a4e9fa66f5cd21b401, type: 2}
-  - {fileID: 11400000, guid: 0be60fd5bb3bda046b3c5ec7554f4e09, type: 2}
   count: 3
 --- !u!1 &367219425
 GameObject:

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f513df778bdd64d8fadb7c064e2357, type: 3}
   m_Name: Ability_Item_5
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: -1288229710777165, guid: bbc400eb9809e2e4584fe0fa1cd67bd6, type: 3}
+  iconSprite: {fileID: -7152180967082747038, guid: 633d5679ae64cba49b10d851cd58d069, type: 3}
   subject: "\uC774\uC790"
   content: "\uCD08\uB2F9 \uC7AC\uD654 \uD68D\uB4DD"

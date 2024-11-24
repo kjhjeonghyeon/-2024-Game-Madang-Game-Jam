@@ -37,7 +37,7 @@ public class AbilityManager : MonoBehaviour
         foreach (AbilityItem item in abilityItems)
         {
             UIAbilityItem created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
-            created.SetAbilityItemData(abilityItemDatas[int.Parse(item.Item1)]);
+            created.SetAbilityItemData(abilityItemDatas[int.Parse(item.Item1)], item.Item1);
         }
     }
 }
