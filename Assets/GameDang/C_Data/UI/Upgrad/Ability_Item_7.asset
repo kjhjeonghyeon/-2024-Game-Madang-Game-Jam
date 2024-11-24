@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f513df778bdd64d8fadb7c064e2357, type: 3}
   m_Name: Ability_Item_7
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 2389479970275197031, guid: 35d2d82a3df925340b2fdaaf4273bad7, type: 3}
+  iconSprite: {fileID: -2055303944347641421, guid: 48b62f1b99155324cacb892b1a0a59d0, type: 3}
   subject: "\uD480 \uCC28\uC9D5"
   content: "\uD544\uC0B4\uAE30 \uCFE8\uD0C0\uC784 \uAC10\uC18C"
