@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.UI;
 
 public class UnitManager : MonoBehaviour
 {
@@ -14,15 +16,6 @@ public class UnitManager : MonoBehaviour
     // 디버깅용 의미 없는 함수 GUI 대신에 키패드를 누르개 만들었을 뿐임
     private void ButtonControl()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            SpawnByIndex(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            SpawnByIndex(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            SpawnByIndex(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-            SpawnByIndex(3);
-
         if (Input.GetKeyDown(KeyCode.Q))
             SpawnEnemyByIndex(0);
         if (Input.GetKeyDown(KeyCode.W))
@@ -35,14 +28,28 @@ public class UnitManager : MonoBehaviour
 
     // 이 함수 호출하면 Unit 이 소환됨 index 는 현재 0 ~ 3 구간임 벗어나면 오류
     // 이 함수를 GUI랑 잘연결하면됨.
-    public void SpawnByIndex(int index)
+    public void SpawnByIndex(int index, Image bw)
     {
         Tower playerTower = TowerManager.PlayerTower;
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
-        if (Player.gold - unitInfo.cost >= 0) {            
+        if (unitIsSpawn[index] && Player.gold - unitInfo.cost >= 0) {
             Player.SetGold(Player.gold - unitInfo.cost);
-            playerTower.SpawnUnit(unitInfo.prefab);            
+            playerTower.SpawnUnit(unitInfo.prefab);
+            StartCoroutine(RunUnitCoolTime(unitInfo.spawnDealy, bw, index));
         }        
+    }
+    private IEnumerator RunUnitCoolTime(float time, Image bw, int index)
+    {
+        bw.fillAmount = 1;
+        float delay = time;
+        unitIsSpawn[index] = false;
+        while (delay > 0) {
+            delay -= Time.fixedDeltaTime;
+            bw.fillAmount = (delay / time);
+            yield return new WaitForFixedUpdate();
+        }
+        unitIsSpawn[index] = true;
+        yield break;
     }
 
     public void SpawnEnemyByIndex(int index)
@@ -70,21 +77,26 @@ public class UnitManager : MonoBehaviour
     #endregion
 
 
-    public void Unit_1()
+    private bool[] unitIsSpawn = {true, true, true, true};
+    private void SpawnService(Image bw, int index)
     {
-        SpawnByIndex(0);
+        SpawnByIndex(index, bw);
     }
-    public void Unit_2()
+    public void Unit_1(Image bw)
     {
-        SpawnByIndex(1);
+        SpawnService(bw, 0);
     }
-    public void Unit_3()
+    public void Unit_2(Image bw)
     {
-        SpawnByIndex(2);
+        SpawnService(bw, 1);
     }
-    public void Unit_4()
+    public void Unit_3(Image bw)
     {
-        SpawnByIndex(3);
+        SpawnService(bw, 2);
+    }
+    public void Unit_4(Image bw)
+    {
+        SpawnService(bw, 3);
     }
 
 
