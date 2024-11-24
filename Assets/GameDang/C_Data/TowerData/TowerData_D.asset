@@ -16,7 +16,7 @@ MonoBehaviour:
   health: 10000
   list:
   - prefab: {fileID: 456069636108781148, guid: aaf8102cbc92a984cafee90eecf42ffe, type: 3}
-    cost: 360
+    cost: 300
     spawnDealy: 1.8
   - prefab: {fileID: 7304099030957995826, guid: c2cba2dc17ab55444be1bbc1bfaf4a11, type: 3}
     cost: 400
@@ -25,5 +25,5 @@ MonoBehaviour:
     cost: 800
     spawnDealy: 4
   - prefab: {fileID: 75019211958827864, guid: 5025b10b9be3da84f868a89333a4ec27, type: 3}
-    cost: 1700
+    cost: 1600
     spawnDealy: 8.5

@@ -2414,6 +2414,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1785486790}
     m_Modifications:
+    - target: {fileID: 1442562395573790732, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442562395573790732, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442562395573790732, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5704346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442562395573790732, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.2048035
+      objectReference: {fileID: 0}
     - target: {fileID: 2335010991533187053, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2497,6 +2513,10 @@ PrefabInstance:
     - target: {fileID: 5482926669692273417, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
       propertyPath: m_Name
       value: Canvas_Enumy_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482926669692273417, guid: 84debbdbf7032cb47a747a27aefad5f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
