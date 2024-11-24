@@ -8,9 +8,11 @@ public class AbilityManager : MonoBehaviour
 {
     #region  UI
     [SerializeField] private UIAbility uiAbility;
+    public AbiilityItemData debug_abilityItem;
     #endregion
     [SerializeField] private int count;
     private List<AbilityItem> abilityItems;
+    
     private void Awake()
     {
         abilityItems = new List<AbilityItem>();        
@@ -34,7 +36,8 @@ public class AbilityManager : MonoBehaviour
     {
         foreach (AbilityItem item in abilityItems)
         {
-            GameObject created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
+            UIAbilityItem created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
+            created.SetAbilityItemData(debug_abilityItem);
         }
     }
 }
@@ -43,8 +46,8 @@ public class AbilityManager : MonoBehaviour
 public struct UIAbility
 {
     [SerializeField] private GameObject abilityGroup;
-    [SerializeField] private GameObject prefab;
+    [SerializeField] private UIAbilityItem prefab;
     public GameObject AbilityGroup { get { return abilityGroup; } }
-    public GameObject Prefab { get { return prefab; } }
+    public UIAbilityItem Prefab { get { return prefab; } }
 
 }

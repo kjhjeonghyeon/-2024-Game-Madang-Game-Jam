@@ -166,6 +166,7 @@ MonoBehaviour:
   uiAbility:
     abilityGroup: {fileID: 1609083622}
     prefab: {fileID: 9048007783066507269, guid: c722a9c2330abd94e9975920c98c1c2b, type: 3}
+  debug_abilityItem: {fileID: 11400000, guid: 176a4cf07dbf37243ad156faf0e6d5d5, type: 2}
   count: 3
 --- !u!1 &367219425
 GameObject:
