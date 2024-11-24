@@ -82,6 +82,10 @@ public abstract class Unit : MonoBehaviour, IHit
                 StartCoroutine(RecoveryCoroutine());
             }
         }
+        if (!IsMine)
+        {
+            transform.GetChild(0).transform.Rotate(new Vector3(0, -180, 0));
+        }
     }
     private IEnumerator<WaitForSeconds> RecoveryCoroutine()
     {
