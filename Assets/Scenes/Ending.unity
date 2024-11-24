@@ -308,8 +308,8 @@ MonoBehaviour:
   endings:
   - {fileID: 5896720089412501635}
   - {fileID: 5896720089412501634}
-  - {fileID: 5896720089412501633}
   - {fileID: 5896720089412501632}
+  - {fileID: 5896720089412501633}
 --- !u!1 &1394096896
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 790470257157930204, guid: 53c93885f4e79b24ebe78315f447d146, type: 3}
       propertyPath: m_Name
       value: Canvas_CamSpace_ENDING
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190653505099816804, guid: 53c93885f4e79b24ebe78315f447d146, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4043070487095338027, guid: 53c93885f4e79b24ebe78315f447d146, type: 3}
       propertyPath: m_Pivot.x
