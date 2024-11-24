@@ -42,6 +42,7 @@ public class BattleManager : MonoBehaviour
     private void Lose()
     {
         uiResult.statusText.text = "패배";
+        uiResult.buttonText.text = "타이틀로";
         UnityAction callback = () => { ButtonAction(LoseAction); };
         uiResult.actionButton.onClick.AddListener(callback);
     }
@@ -58,6 +59,7 @@ public class BattleManager : MonoBehaviour
     private void Win()
     {
         uiResult.statusText.text = "승리";
+        uiResult.buttonText.text = "다음";
         UnityAction callback = () => { ButtonAction(WinAction); };
         uiResult.actionButton.onClick.AddListener(callback);
     }
@@ -82,4 +84,5 @@ public struct UIResult
     public GameObject panel;
     public TMP_Text statusText;
     public Button actionButton;
+    public TMP_Text buttonText;
 }
