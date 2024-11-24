@@ -51,7 +51,7 @@ MonoBehaviour:
   speed: 1
   range: 4
   attackDelay: 1.51
-  health: 1000
+  health: 800
   attackPower: 150
   giftGold: 1200
   animator: {fileID: 6041022452151291124}
