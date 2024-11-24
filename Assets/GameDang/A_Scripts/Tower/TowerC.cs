@@ -13,6 +13,11 @@ public class TowerC : Tower
     [SerializeField] private float Time;
     public override void Skill()
     {
+        foreach (Unit unit in TowerManager.PlayerTower.ActiveUnits)
+        {
+            GameObject obj = Instantiate(EffectManager.Instance.GetEffect(EffectType.FireWindow));
+            obj.transform.position = unit.transform.position;            
+        }
         StartCoroutine(Run());
     }
 
