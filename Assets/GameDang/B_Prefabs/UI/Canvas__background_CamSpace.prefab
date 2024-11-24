@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 5247204040146233766}
   - component: {fileID: 4661649526574777119}
   m_Layer: 5
-  m_Name: Canvas_CamSpace_background
+  m_Name: Canvas__background_CamSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
