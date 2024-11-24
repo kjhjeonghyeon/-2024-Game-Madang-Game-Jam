@@ -6,7 +6,10 @@ using AbilityItem = System.Tuple<string, Ability>;
 
 public class AbilityManager : MonoBehaviour
 {
-    [SerializeField] private int count;    
+    #region  UI
+    [SerializeField] private UIAbility uiAbility;
+    #endregion
+    [SerializeField] private int count;
     private List<AbilityItem> abilityItems;
     private void Awake()
     {
@@ -31,8 +34,17 @@ public class AbilityManager : MonoBehaviour
     {
         foreach (AbilityItem item in abilityItems)
         {
-            Debug.Log(item.Item1);
+            GameObject created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
         }
     }
+}
+
+[System.Serializable]
+public struct UIAbility
+{
+    [SerializeField] private GameObject abilityGroup;
+    [SerializeField] private GameObject prefab;
+    public GameObject AbilityGroup { get { return abilityGroup; } }
+    public GameObject Prefab { get { return prefab; } }
 
 }
