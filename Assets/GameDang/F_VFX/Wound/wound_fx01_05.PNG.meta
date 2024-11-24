@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wound_fx01_05_0: 7339224336722076848
+      wound_fx01_05_1: -8969507578940859978
+      wound_fx01_05_10: -4641738372518723309
+      wound_fx01_05_11: 8266057246554587423
+      wound_fx01_05_12: -156499266365130610
+      wound_fx01_05_13: 697514499824949689
+      wound_fx01_05_14: 2347154446070276843
+      wound_fx01_05_15: -4980865593720183716
+      wound_fx01_05_16: -5767091283227010485
+      wound_fx01_05_17: -7707958637219338402
+      wound_fx01_05_18: -7269647108859470397
+      wound_fx01_05_19: -3440862592557743743
+      wound_fx01_05_2: 5871989510647351463
+      wound_fx01_05_20: -1502599026874682124
+      wound_fx01_05_21: 5495219967202102623
+      wound_fx01_05_22: 5329080984743996355
+      wound_fx01_05_23: -7664257198574547614
+      wound_fx01_05_24: -7675077243105323517
+      wound_fx01_05_25: -5542217761498414944
+      wound_fx01_05_26: 5353867444605816774
+      wound_fx01_05_27: -1670790532510076390
+      wound_fx01_05_28: -1711426385739913166
+      wound_fx01_05_29: -1236338391338544041
+      wound_fx01_05_3: -2667402339746749911
+      wound_fx01_05_30: -3250517082534804833
+      wound_fx01_05_31: 1043798215773410573
+      wound_fx01_05_4: 4840379680730085093
+      wound_fx01_05_5: 5971760469574298257
+      wound_fx01_05_6: 479199944390782505
+      wound_fx01_05_7: -8743049342203529173
+      wound_fx01_05_8: 7123771638313103776
+      wound_fx01_05_9: -4199505196958346150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
