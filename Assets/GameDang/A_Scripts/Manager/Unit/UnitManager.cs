@@ -39,7 +39,10 @@ public class UnitManager : MonoBehaviour
     {
         Tower playerTower = TowerManager.PlayerTower;
         UnitInformation unitInfo = playerTower.GetUnitInformation(index);
-        playerTower.SpawnUnit(unitInfo.prefab);
+        if (Player.gold - unitInfo.cost >= 0) {            
+            Player.SetGold(Player.gold - unitInfo.cost);
+            playerTower.SpawnUnit(unitInfo.prefab);            
+        }        
     }
 
     public void SpawnEnemyByIndex(int index)
