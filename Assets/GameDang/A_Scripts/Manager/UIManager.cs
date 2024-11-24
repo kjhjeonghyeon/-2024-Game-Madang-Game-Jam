@@ -2,11 +2,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.Rendering;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text goldText;
-    
+    [SerializeField] private TMP_Text timeText;
+    private float time;
+    public static string FormatTime(float time)
+    {
+        int totalSeconds = Mathf.FloorToInt(time);
+        int hours = totalSeconds / 3600;
+        int minutes = (totalSeconds % 3600) / 60;
+        int seconds = totalSeconds % 60;
+
+        return $"{hours:D2}:{minutes:D2}:{seconds:D2}";
+    }
     private void OnEnable()
     {
         Player.OnGoldChange += OnGoldChange;
@@ -18,6 +29,11 @@ public class UIManager : MonoBehaviour
     private void OnGoldChange(int gold)
     {
         goldText.text = gold.ToString() + " G";
+    }
+    private void Update()
+    {
+        time += UnityEngine.Time.deltaTime;
+        timeText.text = FormatTime(time);
     }
 
     public void OnSkillButtonClick(Image bw)
