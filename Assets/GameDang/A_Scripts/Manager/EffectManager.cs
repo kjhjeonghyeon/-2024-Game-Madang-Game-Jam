@@ -3,7 +3,10 @@ using UnityEngine;
 
 public enum EffectType
 {
-    Fire = 0
+    Fire = 0,
+    Sunshin = 1,
+    FireWindow = 2,
+    Move=3,
 }
 public class EffectManager : MonoBehaviour
 {
@@ -21,6 +24,6 @@ public class EffectManager : MonoBehaviour
     }
     public GameObject GetEffect(EffectType type)
     {
-        return effects[(int) type];
+        return effects[(int)type];
     }
 }
