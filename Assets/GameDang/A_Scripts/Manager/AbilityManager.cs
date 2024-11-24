@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 using AbilityItem = System.Tuple<string, Ability>;
 
 public class AbilityManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class AbilityManager : MonoBehaviour
     [SerializeField] private List<AbilityItemData> abilityItemDatas;
     #endregion
     [SerializeField] private int count;
+    [SerializeField] private GameObject[] BackGround;
     private List<AbilityItem> abilityItems;
     
     private void Awake()
@@ -39,7 +41,13 @@ public class AbilityManager : MonoBehaviour
             UIAbilityItem created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
             created.SetAbilityItemData(abilityItemDatas[int.Parse(item.Item1)], item.Item1);
         }
+        BackGroundChange();
     }
+    void BackGroundChange()
+    {
+        BackGround[TowerManager.PlayerSelectTowerIndex].SetActive(true);
+    }
+
 }
 
 [System.Serializable]

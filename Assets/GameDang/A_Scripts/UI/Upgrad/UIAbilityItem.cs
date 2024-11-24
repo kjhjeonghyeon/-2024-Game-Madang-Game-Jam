@@ -22,6 +22,7 @@ public class UIAbilityItem : MonoBehaviour
     private void ClickAction()
     {
         Ability.EnableAbility(code);
-        SceneManager.LoadScene("Battle");        
+        SceneManager.LoadScene("Battle");
+        
     }
 }
