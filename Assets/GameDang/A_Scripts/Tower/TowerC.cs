@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TowerC : Tower
 {
-    private float coolTime = 5f;
+    private float coolTime = 15f;
     public override float CoolTime 
     {
         get => coolTime;
