@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04af1ad88b16ba34380e7aecd979631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  range: 2
-  attackDelay: 3
-  health: 10
-  attackPower: 3
+  speed: 4
+  range: 6
+  attackDelay: 1
+  health: 750
+  attackPower: 100
   animator: {fileID: 334097685107297942}
   detectSystem: {fileID: 7839642282535308452}
 --- !u!50 &7289115731165554257
