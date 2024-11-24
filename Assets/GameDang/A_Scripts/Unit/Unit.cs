@@ -144,16 +144,28 @@ public abstract class Unit : MonoBehaviour, IHit
             Dead();
         }
     }
+    public static bool HasParameter(string paramName, Animator animator)
+    {
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.name == paramName)
+                return true;
+        }
+        return false;
+    }
     private void Dead()
     {
-        animator.SetTrigger("Die");
+        if (animator != null && HasParameter("Die", animator))
+        {
+            animator.SetTrigger("Die");
+        }
         Owner.ActiveUnits.Remove(this);        
         OnDied?.Invoke(this);
         StartCoroutine(RunDie());
     }
     private IEnumerator<WaitForSeconds> RunDie()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
     }
 
