@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
 
     public void OnSkillButtonClick(Image bw)
     {
+        if (!TowerManager.PlayerTower.IsSkillUseAble) return;
         TowerManager.PlayerTower.Skill();        
         RunSkillCoolTime(bw, TowerManager.PlayerTower.CoolTime);
     }
@@ -33,11 +34,13 @@ public class UIManager : MonoBehaviour
     private IEnumerator<WaitForFixedUpdate> SkillCoolTimeCoroutine(Image bw, float time)
     {
         float delay = time;
+        TowerManager.PlayerTower.IsSkillUseAble = false;
         while (delay >= 0) {
             delay -= Time.fixedDeltaTime;
             bw.fillAmount = delay / time;
             yield return new WaitForFixedUpdate();
         }
+        TowerManager.PlayerTower.IsSkillUseAble = true;
         yield break;
     }
 }

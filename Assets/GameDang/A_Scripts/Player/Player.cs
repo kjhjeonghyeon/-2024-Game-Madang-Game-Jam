@@ -5,17 +5,15 @@ public abstract class Player : MonoBehaviour
 {
     #region  Gold 관련
     public int gold;
-    private float goldInterval = 1f;
-    private int goldIntervalValue = 50;
+    [Header("수급 주기")]
+    [SerializeField] private float goldInterval = 1f;
+    [Header("수급 량")]
+    [SerializeField]  private int goldIntervalValue = 50;
     private float goldIntervalDelay = 0;
     #endregion
     protected virtual void Update()
     {
         UpdateGold();
-        if (Input.GetKeyDown(KeyCode.G)) 
-        {
-            Debug.Log(Util.Dice(50));
-        }
     }
     private void UpdateGold()
     {
