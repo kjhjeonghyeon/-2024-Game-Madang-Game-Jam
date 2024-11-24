@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.UI;
 
 public class UnitManager : MonoBehaviour
 {
@@ -70,19 +71,19 @@ public class UnitManager : MonoBehaviour
     #endregion
 
 
-    public void Unit_1()
+    public void Unit_1(Image bw)
     {
         SpawnByIndex(0);
     }
-    public void Unit_2()
+    public void Unit_2(Image bw)
     {
         SpawnByIndex(1);
     }
-    public void Unit_3()
+    public void Unit_3(Image bw)
     {
         SpawnByIndex(2);
     }
-    public void Unit_4()
+    public void Unit_4(Image bw)
     {
         SpawnByIndex(3);
     }
