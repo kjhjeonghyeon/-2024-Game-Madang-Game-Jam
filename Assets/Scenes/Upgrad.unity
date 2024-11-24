@@ -167,8 +167,8 @@ MonoBehaviour:
     abilityGroup: {fileID: 1609083622}
     prefab: {fileID: 639545728910094973, guid: c722a9c2330abd94e9975920c98c1c2b, type: 3}
   abilityItemDatas:
-  - {fileID: 11400000, guid: 0be60fd5bb3bda046b3c5ec7554f4e09, type: 2}
   - {fileID: 11400000, guid: 176a4cf07dbf37243ad156faf0e6d5d5, type: 2}
+  - {fileID: 11400000, guid: 0be60fd5bb3bda046b3c5ec7554f4e09, type: 2}
   - {fileID: 11400000, guid: 118111929b1388a4ba2d33801d0adc6e, type: 2}
   - {fileID: 11400000, guid: 024b20d12ad636a4eb450c7fd70e7e23, type: 2}
   - {fileID: 11400000, guid: e1ffbaff22896e2428c3913b782fdd85, type: 2}

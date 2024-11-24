@@ -138,7 +138,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &-9126615384332133846
 MonoBehaviour:
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 5990756065581739290}
   towerData: {fileID: 11400000, guid: ca7baefab7256e84bbb0d32511e92c60, type: 2}
+  IsSkillUseAble: 1
   skillDamage: 50
 --- !u!1001 &5408174834786247442
 PrefabInstance:

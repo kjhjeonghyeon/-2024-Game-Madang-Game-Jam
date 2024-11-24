@@ -1,0 +1,917 @@
+fileFormatVersion: 2
+guid: 2eee6f32a1581a543bb16a739b861f5b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7339224336722076848
+    second: wound_fx01_05_0
+  - first:
+      213: -8969507578940859978
+    second: wound_fx01_05_1
+  - first:
+      213: 5871989510647351463
+    second: wound_fx01_05_2
+  - first:
+      213: -2667402339746749911
+    second: wound_fx01_05_3
+  - first:
+      213: 4840379680730085093
+    second: wound_fx01_05_4
+  - first:
+      213: 5971760469574298257
+    second: wound_fx01_05_5
+  - first:
+      213: 479199944390782505
+    second: wound_fx01_05_6
+  - first:
+      213: -8743049342203529173
+    second: wound_fx01_05_7
+  - first:
+      213: 7123771638313103776
+    second: wound_fx01_05_8
+  - first:
+      213: -4199505196958346150
+    second: wound_fx01_05_9
+  - first:
+      213: -4641738372518723309
+    second: wound_fx01_05_10
+  - first:
+      213: 8266057246554587423
+    second: wound_fx01_05_11
+  - first:
+      213: -156499266365130610
+    second: wound_fx01_05_12
+  - first:
+      213: 697514499824949689
+    second: wound_fx01_05_13
+  - first:
+      213: 2347154446070276843
+    second: wound_fx01_05_14
+  - first:
+      213: -4980865593720183716
+    second: wound_fx01_05_15
+  - first:
+      213: -5767091283227010485
+    second: wound_fx01_05_16
+  - first:
+      213: -7707958637219338402
+    second: wound_fx01_05_17
+  - first:
+      213: -7269647108859470397
+    second: wound_fx01_05_18
+  - first:
+      213: -3440862592557743743
+    second: wound_fx01_05_19
+  - first:
+      213: -1502599026874682124
+    second: wound_fx01_05_20
+  - first:
+      213: 5495219967202102623
+    second: wound_fx01_05_21
+  - first:
+      213: 5329080984743996355
+    second: wound_fx01_05_22
+  - first:
+      213: -7664257198574547614
+    second: wound_fx01_05_23
+  - first:
+      213: -7675077243105323517
+    second: wound_fx01_05_24
+  - first:
+      213: -5542217761498414944
+    second: wound_fx01_05_25
+  - first:
+      213: 5353867444605816774
+    second: wound_fx01_05_26
+  - first:
+      213: -1670790532510076390
+    second: wound_fx01_05_27
+  - first:
+      213: -1711426385739913166
+    second: wound_fx01_05_28
+  - first:
+      213: -1236338391338544041
+    second: wound_fx01_05_29
+  - first:
+      213: -3250517082534804833
+    second: wound_fx01_05_30
+  - first:
+      213: 1043798215773410573
+    second: wound_fx01_05_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wound_fx01_05_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 95
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4a83d36a92ad560800000000000000
+      internalID: 7339224336722076848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 117
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b95e032168e58380800000000000000
+      internalID: -8969507578940859978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 113
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a884fa495f7d7150800000000000000
+      internalID: 5871989510647351463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 114
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922695a54bb7bfad0800000000000000
+      internalID: -2667402339746749911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 112
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e67fe79cab7c2340800000000000000
+      internalID: 4840379680730085093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 109
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a22b0e184ffd250800000000000000
+      internalID: 5971760469574298257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 112
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eaccd7fc576a600800000000000000
+      internalID: 479199944390782505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 99
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28fe3822f27aa680800000000000000
+      internalID: -8743049342203529173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 99
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1b7aacf88bcd260800000000000000
+      internalID: 7123771638313103776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 108
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5414e6f54c58b5c0800000000000000
+      internalID: -4199505196958346150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 96
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311c8bd0b8b359fb0800000000000000
+      internalID: -4641738372518723309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 106
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f110ee1354fe6b270800000000000000
+      internalID: 8266057246554587423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8872b41fb004ddf0800000000000000
+      internalID: -156499266365130610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 107
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b910c3fdb11ea900800000000000000
+      internalID: 697514499824949689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 28
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be26ffe6884c29020800000000000000
+      internalID: 2347154446070276843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 101
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54e75cd12960eab0800000000000000
+      internalID: -4980865593720183716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 93
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a9004880d27ffa0800000000000000
+      internalID: -5767091283227010485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 91
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57232d3574d70590800000000000000
+      internalID: -7707958637219338402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 93
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd5cf188760d1b90800000000000000
+      internalID: -7269647108859470397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_19
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 90
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1818aa9d3b99f30d0800000000000000
+      internalID: -3440862592557743743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 87
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4794b6522b52be0800000000000000
+      internalID: -1502599026874682124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 77
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d07bbf171f24c40800000000000000
+      internalID: 5495219967202102623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 71
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb64f2cbe2b4f940800000000000000
+      internalID: 5329080984743996355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 64
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26dcbb35fa613a590800000000000000
+      internalID: -7664257198574547614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_24
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 39
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306d50569e5ac7590800000000000000
+      internalID: -7675077243105323517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0c6025f461613b0800000000000000
+      internalID: -5542217761498414944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 30
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf024a2312cc4a40800000000000000
+      internalID: 5353867444605816774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12b6a7ecd820d8e0800000000000000
+      internalID: -1670790532510076390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_28
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 14
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238edba05cacf38e0800000000000000
+      internalID: -1711426385739913166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_29
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 17
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754961298c4a7dee0800000000000000
+      internalID: -1236338391338544041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 11
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f928c277fe7d3e2d0800000000000000
+      internalID: -3250517082534804833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wound_fx01_05_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 15
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d055c5c62f05c7e00800000000000000
+      internalID: 1043798215773410573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

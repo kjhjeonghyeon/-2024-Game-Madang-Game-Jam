@@ -29,6 +29,7 @@ public abstract class Ability
 
     public static void EnableAbility(string code)
     {
+        Debug.Log(code);
         abilityMap[code] = new Tuple<bool, Ability>(true, abilityMap[code].Item2);
     }
     public abstract void Enable();
