@@ -8,7 +8,7 @@ public class UIAbilityItem : MonoBehaviour
     [SerializeField] private TMP_Text subjectText;
     [SerializeField] private TMP_Text contentText;
     
-    public void SetAbilityItemData(AbiilityItemData data)
+    public void SetAbilityItemData(AbilityItemData data)
     {
         iconImage.sprite = data.iconSprite;
         subjectText.text = data.subject;

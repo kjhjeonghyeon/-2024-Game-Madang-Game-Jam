@@ -8,7 +8,7 @@ public class AbilityManager : MonoBehaviour
 {
     #region  UI
     [SerializeField] private UIAbility uiAbility;
-    public AbiilityItemData debug_abilityItem;
+    [SerializeField] private List<AbilityItemData> abilityItemDatas;
     #endregion
     [SerializeField] private int count;
     private List<AbilityItem> abilityItems;
@@ -37,7 +37,7 @@ public class AbilityManager : MonoBehaviour
         foreach (AbilityItem item in abilityItems)
         {
             UIAbilityItem created = Instantiate(uiAbility.Prefab, uiAbility.AbilityGroup.transform);
-            created.SetAbilityItemData(debug_abilityItem);
+            created.SetAbilityItemData(abilityItemDatas[int.Parse(item.Item1)]);
         }
     }
 }

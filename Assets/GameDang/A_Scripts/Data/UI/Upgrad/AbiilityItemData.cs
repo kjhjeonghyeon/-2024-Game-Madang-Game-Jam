@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "AbiilityItemData", menuName = "Scriptable Objects/AbiilityItemData")]
-public class AbiilityItemData : ScriptableObject
+public class AbilityItemData : ScriptableObject
 {
     public Sprite iconSprite;
     public string subject;
