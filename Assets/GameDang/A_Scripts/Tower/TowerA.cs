@@ -10,7 +10,7 @@ public class TowerA : Tower
     {
         List<Unit> units = new List<Unit>(TowerManager.EnemyTower.ActiveUnits);
         foreach (Unit unit in units) {
-            GameObject obj = Instantiate(EffectManager.Instance.GetEffect(0));
+            GameObject obj = Instantiate(EffectManager.Instance.GetEffect(EffectType.Fire));
             obj.transform.position = unit.transform.position;
             unit.Hit(skillDamage);
         }

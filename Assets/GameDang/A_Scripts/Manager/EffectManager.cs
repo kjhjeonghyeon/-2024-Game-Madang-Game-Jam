@@ -1,6 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EffectType
+{
+    Fire = 0
+}
 public class EffectManager : MonoBehaviour
 {
     public static EffectManager Instance
@@ -15,8 +19,8 @@ public class EffectManager : MonoBehaviour
     {
         instance = this;
     }
-    public GameObject GetEffect(int index)
+    public GameObject GetEffect(EffectType type)
     {
-        return effects[index];
+        return effects[(int) type];
     }
 }
