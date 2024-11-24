@@ -25,9 +25,9 @@ public class SoundManager : MonoBehaviour
         instance = this;
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        Play(TowerManager.PlayerSelectTowerIndex);
+        Play(TowerManager.EnumySelectTowerIndex);
     }
     private void OnDisable()
     {
@@ -37,6 +37,7 @@ public class SoundManager : MonoBehaviour
     public void Play(SoundType type) => Play((int) type);
     public void Play(int index)
     {
+        Debug.Log(index);
         audioSource.clip = bgms[index];
         audioSource.loop = true;
         audioSource.Play();

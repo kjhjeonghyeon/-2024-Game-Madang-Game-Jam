@@ -159,7 +159,8 @@ public abstract class Unit : MonoBehaviour, IHit
         {
             animator.SetTrigger("Die");
         }
-        StartCoroutine(RunDie());
+        if (gameObject != null)
+            StartCoroutine(RunDie());
     }
     private IEnumerator<WaitForSeconds> RunDie()
     {
