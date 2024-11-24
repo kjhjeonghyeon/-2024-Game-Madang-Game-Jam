@@ -3,7 +3,12 @@ using UnityEngine;
 
 public class TowerD : Tower
 {
-    public override float CoolTime => 10f;
+    private float coolTime = 10f;
+    public override float CoolTime 
+    {
+        get => coolTime;
+        set => coolTime= value;
+    }
     public static float SpeedUpValue = 1f;
     [SerializeField] private float Time;
     [Tooltip("배속 임.. 2배속 이런식으로")]

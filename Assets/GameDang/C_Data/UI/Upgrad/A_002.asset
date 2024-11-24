@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15f513df778bdd64d8fadb7c064e2357, type: 3}
-  m_Name: Ability_Item_5
+  m_Name: A_002
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: -7152180967082747038, guid: 633d5679ae64cba49b10d851cd58d069, type: 3}
-  subject: "\uC774\uC790"
-  content: "\uCD08\uB2F9 \uC7AC\uD654 \uD68D\uB4DD"
+  iconSprite: {fileID: 8049140012281705349, guid: da3745f11907038468a5729a5439c9c6, type: 3}
+  subject: "\uAC70\uC778\uC758 \uD77C"
+  content: "\uCD5C\uB300\uCCB4\uB825 \uC99D\uAC00"

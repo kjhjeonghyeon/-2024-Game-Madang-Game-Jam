@@ -3,7 +3,12 @@ using UnityEngine;
 
 public class TowerC : Tower
 {
-    public override float CoolTime => 5f;
+    private float coolTime = 5f;
+    public override float CoolTime 
+    {
+        get => coolTime;
+        set => coolTime= value;
+    }
     public static bool IsInvincibility = false;
     [SerializeField] private float Time;
     public override void Skill()
