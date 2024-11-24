@@ -53,6 +53,7 @@ MonoBehaviour:
   attackDelay: 3
   health: 10
   attackPower: 3
+  animator: {fileID: 5952768874673674462}
   detectSystem: {fileID: 4210139340248102180}
 --- !u!50 &1352318904748678475
 Rigidbody2D:
@@ -305,7 +306,7 @@ Animator:
   m_GameObject: {fileID: 2332190982403829619}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a03d2b853a002e14ba68bd03ee6ee58a, type: 2}
+  m_Controller: {fileID: 22100000, guid: d9657a5f3752ae54ebec2147fc862b76, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

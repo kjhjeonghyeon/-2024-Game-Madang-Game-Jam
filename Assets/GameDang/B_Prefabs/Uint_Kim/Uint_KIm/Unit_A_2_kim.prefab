@@ -53,6 +53,7 @@ MonoBehaviour:
   attackDelay: 3
   health: 10
   attackPower: 3
+  animator: {fileID: 5048555651653210737}
   detectSystem: {fileID: 3923818294074593045}
 --- !u!50 &281878269000763857
 Rigidbody2D:
@@ -229,7 +230,7 @@ PrefabInstance:
     - target: {fileID: 329507510129740955, guid: 2a6378b9c798be243a4e00219a36d1cd, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: fccdc54909fc5544bb9488d792dad4ff, type: 2}
+      objectReference: {fileID: 22100000, guid: d7643842dad251949bed6d8231de3c0f, type: 2}
     - target: {fileID: 4591516447861919455, guid: 2a6378b9c798be243a4e00219a36d1cd, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.35198936
@@ -291,6 +292,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a6378b9c798be243a4e00219a36d1cd, type: 3}
+--- !u!95 &5048555651653210737 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 329507510129740955, guid: 2a6378b9c798be243a4e00219a36d1cd, type: 3}
+  m_PrefabInstance: {fileID: 4792595024331136746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9023771273018445877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591516447861919455, guid: 2a6378b9c798be243a4e00219a36d1cd, type: 3}
