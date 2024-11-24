@@ -64,7 +64,15 @@ public class BattleManager : MonoBehaviour
 
     private void WinAction()
     {
-        SceneManager.LoadScene("Upgrad");
+        if (TowerManager.activeKeys.Count > 0)
+        {
+            SceneManager.LoadScene("Upgrad");
+        }
+        else
+        {
+            SceneManager.LoadScene("Ending");
+        }
+        
     }
 }
 [System.Serializable]

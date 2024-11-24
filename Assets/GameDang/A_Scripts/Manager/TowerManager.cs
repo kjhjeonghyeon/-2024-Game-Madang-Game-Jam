@@ -22,7 +22,7 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private GameObject[] uIPlayer;
     [SerializeField] private GameObject[] uIEnumy;
     [SerializeField] private GameObject[] uIBackGround;
-    private static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
+    public static HashSet<int> activeKeys = new HashSet<int>(){0,1,2,3};
 
     public static Tower PlayerTower { get; private set; }
     public static Tower EnemyTower { get; private set; }
