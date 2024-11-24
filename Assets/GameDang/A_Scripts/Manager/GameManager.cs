@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     {
         if (TowerManager.PlayerSelectTowerIndex != -1)
         {
-            SceneManager.LoadScene("Battle_ptk");
+            SceneManager.LoadScene("Battle");
         }
     }
 }
