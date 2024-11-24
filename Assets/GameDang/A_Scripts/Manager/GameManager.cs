@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     {
         if (TowerManager.PlayerSelectTowerIndex != -1)
         {
-            SceneManager.LoadScene("Battle");
+            SceneManager.LoadScene("Battle _Kim");
         }
     }
 }

@@ -15,15 +15,15 @@ MonoBehaviour:
   towerName: "\uC800\uADF8"
   health: 10000
   list:
-  - prefab: {fileID: 6764022619791096572, guid: bbeb60532d9e31143b8f3ddeb99666e0, type: 3}
+  - prefab: {fileID: 7986779250740002890, guid: 265e0739e0bb2f44db9ad2f40136be57, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: 7bdeb23f4364c9c4693e27e4fcbe81a7, type: 3}
+  - prefab: {fileID: 3631985290001960873, guid: 16b286e2ae8afa641995f95411995535, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: 5bd3fe1cef68315448a3ac053a364dc8, type: 3}
+  - prefab: {fileID: 8167571378603498068, guid: 3316661294135ea45aff3a7b5ac71788, type: 3}
     cost: 0
     spawnDealy: 0
-  - prefab: {fileID: 6764022619791096572, guid: 6e509d69717e9544da1e6482b06c1610, type: 3}
+  - prefab: {fileID: 6373791075066311633, guid: 49c1502a0ebe0ad48abf111561c2befa, type: 3}
     cost: 0
     spawnDealy: 0
