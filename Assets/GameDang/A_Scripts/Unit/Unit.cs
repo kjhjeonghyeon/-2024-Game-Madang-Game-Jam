@@ -159,14 +159,14 @@ public abstract class Unit : MonoBehaviour, IHit
         {
             animator.SetTrigger("Die");
         }
-        Owner.ActiveUnits.Remove(this);        
-        OnDied?.Invoke(this);
         StartCoroutine(RunDie());
     }
     private IEnumerator<WaitForSeconds> RunDie()
     {
         yield return new WaitForSeconds(1.5f);
-        Destroy(gameObject);
+        OnDied?.Invoke(this);
+        Owner.ActiveUnits.Remove(this);
+        gameObject.SetActive(false);
     }
 
     private void OnEnable()
