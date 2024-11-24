@@ -15,6 +15,22 @@ public abstract class Player : MonoBehaviour
     {
         UpdateGold();
     }
+    private void OnEnable()
+    {
+        Unit.OnDied += OnUnitDied;
+    }
+    private void OnDisable()
+    {
+        Unit.OnDied -= OnUnitDied;
+    }
+    private void OnUnitDied(Unit unit)
+    {
+        if (!unit.IsMine)
+        {
+            Debug.Log("재화 수급 : " + unit.GiftGold);
+            SetGold(gold + unit.GiftGold);
+        }
+    }
     private void UpdateGold()
     {
         if (goldIntervalDelay <= 0) {

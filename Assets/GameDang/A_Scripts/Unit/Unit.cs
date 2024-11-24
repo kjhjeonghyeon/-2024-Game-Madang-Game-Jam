@@ -11,6 +11,8 @@ public abstract class Unit : MonoBehaviour, IHit
     [SerializeField] protected float attackDelay;
     [SerializeField] protected int health;
     [SerializeField] protected int attackPower;
+    [SerializeField] protected int giftGold;
+
     public float Range
     {
         get { return range; }
@@ -37,6 +39,11 @@ public abstract class Unit : MonoBehaviour, IHit
         get { return attackPower; }
         set { attackPower = value; }
     }
+    public int GiftGold
+    {
+        get { return giftGold; }
+        set { giftGold = value; }
+    }
     #endregion
     
     #region  제어용 Property
@@ -60,7 +67,7 @@ public abstract class Unit : MonoBehaviour, IHit
     /// 이동 방향 1 이면 오른쪽 -1 이면 왼쪽
     /// </summary>
     private int direction = 1;
-    protected bool IsMine { get; set; }
+    public bool IsMine { get; set; }
     [SerializeField] private DetectSystem detectSystem;
 
     public void Init(Tower onwer)
@@ -162,16 +169,16 @@ public abstract class Unit : MonoBehaviour, IHit
         {
             animator.SetTrigger("Die");
         }
-        StartCoroutine(RunDie());
+        StartCoroutine(RunDie());        
     }
     private IEnumerator<WaitForSeconds> RunDie()
     {
-        yield return new WaitForSeconds(1.5f);
         OnDied?.Invoke(this);
         if (Owner.ActiveUnits != null && Owner.ActiveUnits.Contains(this))
         {
             Owner.ActiveUnits.Remove(this);
         }
+        yield return new WaitForSeconds(1.5f);        
         gameObject.SetActive(false);
     }
 
