@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TowerB : Tower
 {
-    private float coolTime = 5f;
+    private float coolTime = 30f;
     public override float CoolTime 
     {
         get => coolTime;
@@ -27,7 +27,7 @@ public class TowerB : Tower
     {
         Unit spawnedUnit = SpawnUnit(unit);
         spawnedUnit.transform.position -= new Vector3(Random.Range(0f, 1f), Random.Range(0f, 1f), 0);
-        spawnedUnit.transform.GetChild(0).transform.Rotate(new Vector3(0, -180, 0));
+        spawnedUnit.transform.Rotate(new Vector3(0, -180, 0));
         GameObject obj = Instantiate(EffectManager.Instance.GetEffect(EffectType.Sunshin), spawnedUnit.transform.position, Quaternion.identity);
         TowerManager.EnemyTower.ActiveUnits.Remove(unit);
         unit.gameObject.SetActive(false);        
