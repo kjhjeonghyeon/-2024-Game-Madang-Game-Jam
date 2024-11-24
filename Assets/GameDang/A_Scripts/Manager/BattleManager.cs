@@ -53,7 +53,7 @@ public class BattleManager : MonoBehaviour
     }
     private void LoseAction()
     {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("Start");
     }
 
     private void Win()
