@@ -5,7 +5,7 @@ using UnityEngine.Assertions;
 
 public class TowerManager : MonoBehaviour
 {
-    private static int playerSelectTowerIndex = 1;
+    private static int playerSelectTowerIndex = 2;
     public static int PlayerSelectTowerIndex
     {
         get { return playerSelectTowerIndex; }
