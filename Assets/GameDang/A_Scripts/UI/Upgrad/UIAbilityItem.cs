@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIAbilityItem : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class UIAbilityItem : MonoBehaviour
     }
     private void ClickAction()
     {
-        Debug.Log(code);
+        Ability.EnableAbility(code);
+        SceneManager.LoadScene("Battle");        
     }
 }

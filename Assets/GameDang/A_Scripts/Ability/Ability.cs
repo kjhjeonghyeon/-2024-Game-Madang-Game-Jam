@@ -26,6 +26,11 @@ public abstract class Ability
     {
         return abilityMap.Where(pair => !pair.Value.Item1).Select(pair => pair.Key).ToList();
     }
+
+    public static void EnableAbility(string code)
+    {
+        abilityMap[code] = new Tuple<bool, Ability>(true, abilityMap[code].Item2);
+    }
     public abstract void Enable();
     public abstract void Disable();
 }
