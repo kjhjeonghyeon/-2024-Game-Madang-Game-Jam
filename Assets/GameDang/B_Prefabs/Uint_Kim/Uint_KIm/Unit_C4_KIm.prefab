@@ -254,7 +254,7 @@ MonoBehaviour:
   attackDelay: 1.25
   health: 1300
   attackPower: 150
-  giftGold: 5
+  giftGold: 1600
   animator: {fileID: 5003111217386940808}
   detectSystem: {fileID: 690558113754806926}
 --- !u!50 &2061999025604361272
