@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour
     {
 
         GameScene = "Start";
-        Invoke("SlowScene", 0.9f);
+        Invoke("SlowScene", 9f);
     }
     public void SelsectScene()
     {
 
         GameScene = "Select";
-        Invoke("SlowScene", 0.3f);
+        Invoke("SlowScene", 4f);
     }
     void SlowScene()
     {
