@@ -48,6 +48,7 @@ public abstract class Tower : MonoBehaviour, IUnitSpawner, IHit
         return this;
     }
     public abstract void Skill();
+    public abstract float CoolTime { get; }
 
     #region Event
     public static event Action<Tower> OnTowerDied;

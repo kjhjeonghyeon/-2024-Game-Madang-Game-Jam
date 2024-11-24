@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class TowerB : Tower
 {
+    public override float CoolTime => 5f;
     [SerializeField] private int count;
     public override void Skill()
     {
