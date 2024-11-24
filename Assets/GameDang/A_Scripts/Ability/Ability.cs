@@ -22,9 +22,14 @@ public abstract class Ability
     {
         return abilityMap.Where(pair => pair.Value.Item1).Select(pair => pair.Value.Item2).ToList();
     }
-    public static List<Ability> GetSelectAbleAbilitys()
+    public static List<string> GetSelectAbleAbilitys()
     {
-        return abilityMap.Where(pair => !pair.Value.Item1).Select(pair => pair.Value.Item2).ToList();
+        return abilityMap.Where(pair => !pair.Value.Item1).Select(pair => pair.Key).ToList();
+    }
+
+    public static void EnableAbility(string code)
+    {
+        abilityMap[code] = new Tuple<bool, Ability>(true, abilityMap[code].Item2);
     }
     public abstract void Enable();
     public abstract void Disable();
