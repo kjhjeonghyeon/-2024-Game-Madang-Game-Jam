@@ -10,6 +10,11 @@ public class TowerD : Tower
     [SerializeField] private float Value;
     public override void Skill()
     {   
+        foreach (Unit unit in TowerManager.PlayerTower.ActiveUnits)
+        {
+            GameObject obj = Instantiate(EffectManager.Instance.GetEffect(EffectType.Move));
+            obj.transform.position = unit.transform.position;            
+        }
         StartCoroutine(Run());
     }
     private IEnumerator Run()
