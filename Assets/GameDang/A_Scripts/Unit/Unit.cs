@@ -131,6 +131,7 @@ public abstract class Unit : MonoBehaviour, IHit
         }
         attackTarget.Hit(calculatePower);
     }
+    private bool isDead = false;
 
     public void Hit(int damage)
     {
@@ -141,7 +142,8 @@ public abstract class Unit : MonoBehaviour, IHit
                 health = 1;
                 return;                
             }
-            Dead();
+            if (!isDead)
+                Dead();
         }
     }
     public static bool HasParameter(string paramName, Animator animator)
@@ -155,18 +157,21 @@ public abstract class Unit : MonoBehaviour, IHit
     }
     private void Dead()
     {
+        isDead = true;
         if (animator != null && HasParameter("Die", animator))
         {
             animator.SetTrigger("Die");
         }
-        if (gameObject != null)
-            StartCoroutine(RunDie());
+        StartCoroutine(RunDie());
     }
     private IEnumerator<WaitForSeconds> RunDie()
     {
         yield return new WaitForSeconds(1.5f);
         OnDied?.Invoke(this);
-        Owner.ActiveUnits.Remove(this);
+        if (Owner.ActiveUnits != null && Owner.ActiveUnits.Contains(this))
+        {
+            Owner.ActiveUnits.Remove(this);
+        }
         gameObject.SetActive(false);
     }
 
