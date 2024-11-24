@@ -45,7 +45,7 @@ public class AbilityManager : MonoBehaviour
     }
     void BackGroundChange()
     {
-        BackGround[TowerManager.PlayerSelectTowerIndex].SetActive(true);
+        BackGround[TowerManager.EnumySelectTowerIndex].SetActive(true);
     }
 
 }
