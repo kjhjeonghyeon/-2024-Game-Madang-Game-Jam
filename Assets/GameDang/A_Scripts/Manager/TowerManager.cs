@@ -5,7 +5,7 @@ using UnityEngine.Assertions;
 
 public class TowerManager : MonoBehaviour
 {
-    private static int playerSelectTowerIndex = 1;
+    private static int playerSelectTowerIndex = 2;
     public static int PlayerSelectTowerIndex
     {
         get { return playerSelectTowerIndex; }
@@ -32,6 +32,8 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private EnemyOption enemyOption;
     private static EnemyOption temp;
 
+    [SerializeField] private Unit cheatUnit;
+
     private void Awake()
     {
         InitTowers();
@@ -39,6 +41,14 @@ public class TowerManager : MonoBehaviour
     private void Update()
     {
         enemy.Update();
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            EnemyTower.SpawnUnit(cheatUnit);
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PlayerTower.SpawnUnit(cheatUnit);
+        }
     }    
 
     private Tower SpawnTower(GameObject prefab, Transform location)

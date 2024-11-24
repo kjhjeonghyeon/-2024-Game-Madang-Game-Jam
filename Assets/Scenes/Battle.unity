@@ -1716,6 +1716,7 @@ MonoBehaviour:
   - {fileID: 2139808912}
   player: {fileID: 0}
   enemyOption: {fileID: 11400000, guid: 3825ec22be266d544877d053766dbd28, type: 2}
+  cheatUnit: {fileID: 3631985290001960873, guid: d3206f2ff72c9524e9fc57f7e82ca934, type: 3}
 --- !u!4 &1126601351
 Transform:
   m_ObjectHideFlags: 0
