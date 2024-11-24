@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class TowerManager : MonoBehaviour
 {
@@ -27,12 +28,18 @@ public class TowerManager : MonoBehaviour
     public static Tower PlayerTower { get; private set; }
     public static Tower EnemyTower { get; private set; }
     [SerializeField] private Player player;
+    private Enemy enemy;
+    [SerializeField] private EnemyOption enemyOption;
+    private static EnemyOption temp;
 
     private void Awake()
     {
         InitTowers();
-        
     }
+    private void Update()
+    {
+        enemy.Update();
+    }    
 
     private Tower SpawnTower(GameObject prefab, Transform location)
     {
@@ -63,5 +70,7 @@ public class TowerManager : MonoBehaviour
         uIBackGround[enemyTowerIndex].SetActive(true);
         uIEnumy[enemyTowerIndex].SetActive(true);
         EnumySelectTowerIndex = enemyTowerIndex;
+        enemy = new Enemy(EnemyTower, enemyOption != null ? enemyOption : temp);
+        temp = enemyOption;
     }
 }
