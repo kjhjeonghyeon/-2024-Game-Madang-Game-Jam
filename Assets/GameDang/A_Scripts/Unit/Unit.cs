@@ -45,6 +45,8 @@ public abstract class Unit : MonoBehaviour, IHit
     private float delay = 0;
     private bool isAttack = false;
 
+    [SerializeField] Animator animator;
+
     #endregion
     /// <summary>
     /// 소유 타워
@@ -144,9 +146,15 @@ public abstract class Unit : MonoBehaviour, IHit
     }
     private void Dead()
     {
-        Owner.ActiveUnits.Remove(this);
-        gameObject.SetActive(false);
+        animator.SetTrigger("Die");
+        Owner.ActiveUnits.Remove(this);        
         OnDied?.Invoke(this);
+        StartCoroutine(RunDie());
+    }
+    private IEnumerator<WaitForSeconds> RunDie()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 
     private void OnEnable()

@@ -53,6 +53,7 @@ MonoBehaviour:
   attackDelay: 3
   health: 10
   attackPower: 3
+  animator: {fileID: 334097685107297942}
   detectSystem: {fileID: 7839642282535308452}
 --- !u!50 &7289115731165554257
 Rigidbody2D:
@@ -299,6 +300,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b072ea170aec034ea2287536ee1cacb, type: 3}
+--- !u!95 &334097685107297942 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4376306418305286606, guid: 2b072ea170aec034ea2287536ee1cacb, type: 3}
+  m_PrefabInstance: {fileID: 4042323245616107352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8517471910244079059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5633180699280792203, guid: 2b072ea170aec034ea2287536ee1cacb, type: 3}
