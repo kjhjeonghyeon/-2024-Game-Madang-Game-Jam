@@ -21,6 +21,7 @@ public abstract class Player : MonoBehaviour
     }
     private void OnDisable()
     {
+        gold = 0;
         Unit.OnDied -= OnUnitDied;
     }
     private void OnUnitDied(Unit unit)
